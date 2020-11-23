@@ -55,8 +55,6 @@
           <img src="https://via.placeholder.com/300x300" width="300" height="300" alt="Пример фотографии с фильтром «Pink»">
         </div>
 
-        <!-- Замечание о дроблении БЭМ-блоков на более маленькие блоки принял к сведению, спасибо) Буду это учитывать в работе. Но здесь конкретно душа у меня лежит оставить этот элемент все-таки отдельным блоком -->
-
         <div class="promo-screen__download-app download-app">
           <div class="download-app__inner">
             <a class="download-app__link" href="https://www.apple.com/app-store/" target="_blank">Скачать приложение</a>
@@ -186,12 +184,12 @@
 
         <h2 class="visually-hidden">Таблица тарифов</h2>
 
-        <!-- Честно говоря, не совсем понял как ты имеешь в виду оформить таблицу) Что и почему там должно быть через псевдоэлементы, а что в ячеках. Я ее объединил и немного подшаманил (почитал weblind). Попробуй чуть подробнее раскрыть идею в комментариях, а я ее тогда к следуюущему заданию доделаю.  -->
+        <!-- Кажется понял)) -->
 
         <table class="price-table__container">
           <thead>
             <tr>
-              <th class="price-table__header price-table__header--transparent" scope="col">
+              <th class="price-table__header price-table__no-mobil price-table__header--transparent" scope="col">
                 <p class="visually-hidden">Что входит в тариф</p>
               </th>
               <th class="price-table__header" scope="col">
@@ -210,53 +208,44 @@
           </thead>
           <tbody>
             <tr>
-              <td class="price-table__tariff-includes" scope="row">
+              <td class="price-table__tariff-includes price-table__no-mobil" scope="row">
                 <p class="price-table__includes-text">Розовый фильтр</p>
               </td>
-              <td class="price-table__tariff-item">
-                <p class="price-table__item-text">Розовый фильтр</p>
+              <td class="price-table__tariff-item" data-tariff="Розовый фильтр">
                 <p class="price-table__item-icon price-table__item-icon--yes"><span class="visually-hidden">Да</span></p>
               </td>
-              <td class="price-table__tariff-item">
-                <p class="price-table__item-text">Розовый фильтр</p>
+              <td class="price-table__tariff-item" data-tariff="Розовый фильтр">
                 <p class="price-table__item-icon price-table__item-icon--yes"><span class="visually-hidden">Да</span></p>
               </td>
-              <td class="price-table__tariff-item">
-                <p class="price-table__item-text">Розовый фильтр</p>
+              <td class="price-table__tariff-item" data-tariff="Розовый фильтр">
                 <p class="price-table__item-icon price-table__item-icon--yes"><span class="visually-hidden">Да</span></p>
               </td>
             </tr>
             <tr>
-              <td class="price-table__tariff-includes" scope="row">
+              <td class="price-table__tariff-includes price-table__no-mobil" scope="row">
                 <p class="price-table__includes-text">Смайлики</p>
               </td>
-              <td class="price-table__tariff-item">
-                <p class="price-table__item-text">Смайлики</p>
+              <td class="price-table__tariff-item" data-tariff="Смайлики">
                 <p class="price-table__item-icon price-table__item-icon--no"><span class="visually-hidden">Нет</span></p>
               </td>
-              <td class="price-table__tariff-item">
-                <p class="price-table__item-text">Смайлики</p>
+              <td class="price-table__tariff-item" data-tariff="Смайлики">
                 <p class="price-table__item-icon price-table__item-icon--yes"><span class="visually-hidden">Да</span></p>
               </td>
-              <td class="price-table__tariff-item">
-                <p class="price-table__item-text">Смайлики</p>
+              <td class="price-table__tariff-item" data-tariff="Смайлики">
                 <p class="price-table__item-icon price-table__item-icon--yes"><span class="visually-hidden">Да</span></p>
               </td>
             </tr>
             <tr>
-              <td class="price-table__tariff-includes" scope="row">
+              <td class="price-table__tariff-includes price-table__no-mobil" scope="row">
                 <p class="price-table__includes-text">Комментарии</p>
               </td>
-              <td class="price-table__tariff-item">
-                <p class="price-table__item-text">Комментарии</p>
+              <td class="price-table__tariff-item" data-tariff="Комментарии">
                 <p class="price-table__item-icon price-table__item-icon--no"><span class="visually-hidden">Нет</span></p>
               </td>
-              <td class="price-table__tariff-item">
-                <p class="price-table__item-text">Комментарии</p>
+              <td class="price-table__tariff-item" data-tariff="Комментарии">
                 <p class="price-table__item-icon price-table__item-icon--no"><span class="visually-hidden">Нет</span></p>
               </td>
-              <td class="price-table__tariff-item">
-                <p class="price-table__item-text">Комментарии</p>
+              <td class="price-table__tariff-item" data-tariff="Комментарии">
                 <p class="price-table__item-icon price-table__item-icon--yes"><span class="visually-hidden">Да</span></p>
               </td>
             </tr>
