@@ -27,8 +27,8 @@
 }
 
 .features__benefits-list {
- @include list-reset;
- text-align: center;
+  @include list-reset;
+  text-align: center;
 }
 
 .features__benefit-title {

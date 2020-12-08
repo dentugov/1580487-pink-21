@@ -28,6 +28,7 @@
   &:not(:last-child) {
     border-right: 2px solid $border-grey;
   }
+
   &--transparent {
     background-color: transparent;
   }
