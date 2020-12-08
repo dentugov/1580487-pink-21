@@ -1,0 +1,25 @@
+// Download App
+
+.download-app {
+  background-color: $extra-darkgrey;
+  padding: 28px 0 35px;
+}
+
+.download-app__inner {
+  padding: 0 20px;
+}
+
+.download-app__link {
+  font-size: 18px;
+  font-weight: bold;
+  color: $white;
+  text-decoration: none;
+}
+
+.download-app__list-logos {
+  @include list-reset;
+}
+
+.download-app__desc {
+  margin: 0;
+}

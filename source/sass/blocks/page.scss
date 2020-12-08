@@ -1,0 +1,16 @@
+.page {
+  height: 100%;
+}
+
+.page__body {
+  min-height: 100%;
+  font-size: $basic-font-size;
+  font-family: $main-font;
+  line-height: 24px;
+  color: $basic-darkgrey;
+  margin: 0;
+}
+
+.page__footer {
+  padding: 50px 0 40px;
+}

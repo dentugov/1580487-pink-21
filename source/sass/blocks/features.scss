@@ -1,0 +1,64 @@
+// Feachers
+
+.features__inner {
+  padding: 0 20px;
+}
+
+.features__text {
+  font-size: 24px;
+  line-height: 29px;
+  font-weight: 300;
+  text-align: center;
+  padding: 40px 0 30px;
+}
+
+.features__text p {
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+.features__text p:last-child {
+  margin-bottom: 0;
+}
+
+.features__benefits {
+  background-color: $basic-lightgrey;
+  padding: 85px 0 325px;
+}
+
+.features__benefits-list {
+ @include list-reset;
+ text-align: center;
+}
+
+.features__benefit-title {
+  font-size: 18px;
+  font-weight: bold;
+  color: $black;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.features__research {
+  padding: 100px 0 80px;
+
+  @media screen and (max-width: $mobile-width-only) {
+    display: none;
+  }
+}
+
+.features__research-container {
+  padding-left: 310px;
+}
+
+.features__research-title {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: bold;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.features__research-link {
+  color: $basic-pink;
+}

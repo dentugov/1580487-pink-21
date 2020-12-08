@@ -1,0 +1,72 @@
+// Price Table
+
+.price-table {
+  padding: 100px 0 50px;
+  background-color: $basic-lightgrey;
+  overflow: hidden;
+}
+
+.price-table__inner {
+  padding: 0 20px;
+}
+
+.price-table__container {
+  position: relative;
+  left: 50%;
+  width: calc(100% * 3);
+  transform: translateX(-50%);
+  border-collapse: collapse;
+}
+
+.price-table__header {
+  color: $white;
+  text-transform: uppercase;
+  background-color: $basic-darkgrey;
+  width: calc(100% / 3);
+  padding: 20px 0 30px;
+
+  &:not(:last-child) {
+    border-right: 2px solid $border-grey;
+  }
+  &--transparent {
+    background-color: transparent;
+  }
+}
+
+.price-table__tariff-includes {
+  border: 2px solid $border-grey;
+  background-color: $white;
+}
+
+.price-table__tariff-item {
+  border: 2px solid $border-grey;
+  background-color: $white;
+
+  @media screen and (max-width: $mobile-width-only) {
+    &::before {
+      content: attr(data-tariff);
+    }
+  }
+}
+
+@media screen and (max-width: $mobile-width-only) {
+  .price-table__no-mobil {
+    display: none;
+  }
+}
+
+.price-table__tariff-name {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.price-table__tariff-value {
+  font-size: 18px;
+  font-weight: 300;
+  margin: 0;
+}
+
+.price-table__pagination {
+  text-align: center;
+}

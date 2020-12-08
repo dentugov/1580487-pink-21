@@ -1,0 +1,16 @@
+// Promo Screen
+
+.promo-screen {
+  color: $white;
+  background-color: $basic-darkgrey;
+  padding: 25px 0 0;
+}
+
+.promo-screen__text {
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+  font-weight: 300;
+  margin: 0;
+  margin-bottom: 30px;
+}
