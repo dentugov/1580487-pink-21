@@ -4,23 +4,18 @@
   padding: 50px 0 40px;
 }
 
-.reviews__inner {
-  padding: 0 20px;
-}
-
 .reviews__list {
   @include list-reset;
 }
 
 .reviews__user-blockquote {
-  line-height: 30px;
+  line-height: $line-height-l;
   text-align: center;
   margin: 0;
 }
 
 .reviews__author-name {
-  font-size: 18px;
-  font-weight: bold;
+  @include font-params($font-size-l, $font-weight-bold);
   font-style: normal;
   color: $black;
 }

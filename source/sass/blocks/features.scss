@@ -1,13 +1,7 @@
 // Feachers
 
-.features__inner {
-  padding: 0 20px;
-}
-
 .features__text {
-  font-size: 24px;
-  line-height: 29px;
-  font-weight: 300;
+  @include font-params($font-size-2xl, $font-weight-thin, $line-height-m);
   text-align: center;
   padding: 40px 0 30px;
 }
@@ -22,7 +16,7 @@
 }
 
 .features__benefits {
-  background-color: $basic-lightgrey;
+  background-color: $page-section-bg-color;
   padding: 85px 0 325px;
 }
 
@@ -32,8 +26,7 @@
 }
 
 .features__benefit-title {
-  font-size: 18px;
-  font-weight: bold;
+  @include font-params($font-size-l, $font-weight-bold);
   color: $black;
   margin: 0;
   margin-bottom: 20px;
@@ -52,13 +45,11 @@
 }
 
 .features__research-title {
-  font-size: 30px;
-  line-height: 36px;
-  font-weight: bold;
+  @include font-params($font-size-3xl, $font-weight-bold, $line-height-2xl);
   margin: 0;
   margin-bottom: 20px;
 }
 
 .features__research-link {
-  color: $basic-pink;
+  color: $basic-link-color;
 }
