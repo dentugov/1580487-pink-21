@@ -3,9 +3,9 @@
 .button {
   @include button-reset;
   color: $white;
-  font-weight: bold;
+  font-weight: $font-weight-bold;
   text-transform: uppercase;
-  background-color: $basic-green;
+  background-color: $basic-button-color;
   padding: 20px;
   border-radius: 3px;
 }

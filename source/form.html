@@ -63,90 +63,100 @@
 
         <form class="contest-form__container" action="https://echo.htmlacademy.ru" method="GET">
 
-          <fieldset class="contest-form__fieldset">
-            <legend class="visually-hidden">Как вас зовут?</legend>
-            <p class="contest-form__field-bond">
-              <label class="contest-form__label" for="your-surname">Фамилия:</label>
-              <input class="contest-form__input input-field" id="your-surname" type="text" name="surname" placeholder="Укажите фамилию *">
-            </p>
-            <p class="contest-form__field-bond">
-              <label class="contest-form__label" for="your-name">Имя:</label>
-              <input class="contest-form__input input-field" id="your-name" type="text" name="name" placeholder="Введите ваше имя *">
-            </p>
-            <p class="contest-form__field-bond">
-              <label class="contest-form__label" for="your-midname">Отчество:</label>
-              <input class="contest-form__input input-field" id="your-midname" type="text" name="midname" placeholder="Ну и отчество тоже">
-            </p>
-          </fieldset>
+          <div class="contest-form__fieldset-wrap">
+            <fieldset class="contest-form__fieldset">
+              <legend class="visually-hidden">Как вас зовут?</legend>
+              <p class="contest-form__field-bond">
+                <label class="contest-form__label" for="your-surname">Фамилия:</label>
+                <input class="contest-form__input input-field" id="your-surname" type="text" name="surname" placeholder="Укажите фамилию *">
+              </p>
+              <p class="contest-form__field-bond">
+                <label class="contest-form__label" for="your-name">Имя:</label>
+                <input class="contest-form__input input-field" id="your-name" type="text" name="name" placeholder="Введите ваше имя *">
+              </p>
+              <p class="contest-form__field-bond">
+                <label class="contest-form__label" for="your-midname">Отчество:</label>
+                <input class="contest-form__input input-field" id="your-midname" type="text" name="midname" placeholder="Ну и отчество тоже">
+              </p>
+            </fieldset>
+          </div>
 
-          <fieldset class="contest-form__fieldset contest-form__fieldset--triumph">
-            <legend class="contest-form__caption">Ваши безбашенные достижения в путешествии</legend>
-            <ul class="contest-form__list">
-              <li class="contest-form__item">
-                <input class="contest-form__checkbox-input visually-hidden" id="selfie" type="checkbox" name="shark-selfie" checked>
-                <label class="contest-form__option-label" for="selfie">Сделал селфи с акулой</label>
-              </li>
-              <li class="contest-form__item">
-                <input class="contest-form__checkbox-input visually-hidden" id="sunburn" type="checkbox" name="got-sunburn" checked>
-                <label class="contest-form__option-label" for="sunburn">Обгорел на пляже</label>
-              </li>
-              <li class="contest-form__item">
-                <input class="contest-form__checkbox-input visually-hidden" id="chuck" type="checkbox" name="omg-i-see-him">
-                <label class="contest-form__option-label" for="chuck">Видел Чака Норриса</label>
-              </li>
-              <li class="contest-form__item">
-                <input class="contest-form__checkbox-input visually-hidden" id="souvenir" type="checkbox" name="too-much-souvenirs">
-                <label class="contest-form__option-label" for="souvenir">Накурил сувениров</label>
-              </li>
-              <li class="contest-form__item">
-                <input class="contest-form__checkbox-input visually-hidden" id="tower" type="checkbox" name="pisa" checked>
-                <label class="contest-form__option-label" for="tower">Удержал башню</label>
-              </li>
-              <li class="contest-form__item">
-                <input class="contest-form__checkbox-input visually-hidden" id="defeat" type="checkbox" name="rock-and-roll">
-                <label class="contest-form__option-label" for="defeat">Разгромил отель</label>
-              </li>
-            </ul>
-          </fieldset>
+          <div class="contest-form__fieldset-wrap contest-form__fieldset-wrap--triumph">
+            <fieldset class="contest-form__fieldset">
+              <legend class="contest-form__caption">Ваши безбашенные достижения в путешествии</legend>
+              <ul class="contest-form__list">
+                <li class="contest-form__item">
+                  <input class="contest-form__checkbox-input visually-hidden" id="selfie" type="checkbox" name="shark-selfie" checked>
+                  <label class="contest-form__option-label" for="selfie">Сделал селфи с акулой</label>
+                </li>
+                <li class="contest-form__item">
+                  <input class="contest-form__checkbox-input visually-hidden" id="sunburn" type="checkbox" name="got-sunburn" checked>
+                  <label class="contest-form__option-label" for="sunburn">Обгорел на пляже</label>
+                </li>
+                <li class="contest-form__item">
+                  <input class="contest-form__checkbox-input visually-hidden" id="chuck" type="checkbox" name="omg-i-see-him">
+                  <label class="contest-form__option-label" for="chuck">Видел Чака Норриса</label>
+                </li>
+                <li class="contest-form__item">
+                  <input class="contest-form__checkbox-input visually-hidden" id="souvenir" type="checkbox" name="too-much-souvenirs">
+                  <label class="contest-form__option-label" for="souvenir">Накурил сувениров</label>
+                </li>
+                <li class="contest-form__item">
+                  <input class="contest-form__checkbox-input visually-hidden" id="tower" type="checkbox" name="pisa" checked>
+                  <label class="contest-form__option-label" for="tower">Удержал башню</label>
+                </li>
+                <li class="contest-form__item">
+                  <input class="contest-form__checkbox-input visually-hidden" id="defeat" type="checkbox" name="rock-and-roll">
+                  <label class="contest-form__option-label" for="defeat">Разгромил отель</label>
+                </li>
+              </ul>
+            </fieldset>
+          </div>
 
-          <fieldset class="contest-form__fieldset">
-            <legend class="visually-hidden">Контактные данные</legend>
-            <p class="contest-form__field-bond">
-              <label class="contest-form__label" for="your-phone">Номер телефона</label>
-              <input class="contest-form__input input-field" id="your-phone" type="tel" name="phone" placeholder="Номер, пожалуйста">
-            </p>
-            <p class="contest-form__field-bond">
-              <label class="contest-form__label" for="your-email">Адрес почты</label>
-              <input class="contest-form__input input-field" id="your-email" type="email" name="email" placeholder="Введите почту *">
-            </p>
-          </fieldset>
+          <div class="contest-form__fieldset-wrap">
+            <fieldset class="contest-form__fieldset">
+              <legend class="visually-hidden">Контактные данные</legend>
+              <p class="contest-form__field-bond">
+                <label class="contest-form__label" for="your-phone">Номер телефона</label>
+                <input class="contest-form__input input-field" id="your-phone" type="tel" name="phone" placeholder="Номер, пожалуйста">
+              </p>
+              <p class="contest-form__field-bond">
+                <label class="contest-form__label" for="your-email">Адрес почты</label>
+                <input class="contest-form__input input-field" id="your-email" type="email" name="email" placeholder="Введите почту *">
+              </p>
+            </fieldset>
+          </div>
 
-          <fieldset class="contest-form__fieldset contest-form__fieldset--platform">
-            <legend class="contest-form__caption">С каким приложением путешествовали?</legend>
-            <ul class="contest-form__list">
-              <li class="contest-form__item">
-                <input class="contest-form__radio-input visually-hidden" id="apple" type="radio" name="platform" value="ios" checked>
-                <label class="contest-form__option-label" for="apple">Pink для iOS</label>
-              </li>
-              <li class="contest-form__item">
-                <input class="contest-form__radio-input visually-hidden" id="android" type="radio" name="platform" value="android">
-                <label class="contest-form__option-label" for="android">Pink на Android</label>
-              </li>
-              <li class="contest-form__item">
-                <input class="contest-form__radio-input visually-hidden" id="windows" type="radio" name="platform" value="windows">
-                <label class="contest-form__option-label" for="windows">Windows Phone</label>
-              </li>
-            </ul>
-          </fieldset>
+          <div class="contest-form__fieldset-wrap contest-form__fieldset-wrap--platform">
+            <fieldset class="contest-form__fieldset">
+              <legend class="contest-form__caption">С каким приложением путешествовали?</legend>
+              <ul class="contest-form__list">
+                <li class="contest-form__item">
+                  <input class="contest-form__radio-input visually-hidden" id="apple" type="radio" name="platform" value="ios" checked>
+                  <label class="contest-form__option-label" for="apple">Pink для iOS</label>
+                </li>
+                <li class="contest-form__item">
+                  <input class="contest-form__radio-input visually-hidden" id="android" type="radio" name="platform" value="android">
+                  <label class="contest-form__option-label" for="android">Pink на Android</label>
+                </li>
+                <li class="contest-form__item">
+                  <input class="contest-form__radio-input visually-hidden" id="windows" type="radio" name="platform" value="windows">
+                  <label class="contest-form__option-label" for="windows">Windows Phone</label>
+                </li>
+              </ul>
+            </fieldset>
+          </div>
 
-          <fieldset class="contest-form__fieldset">
-            <legend class="contest-form__caption">Опишите свои эмоции</legend>
-            <textarea class="contest-form__input contest-form__input--textarea  input-field" name="impressions" id="your-impressions" rows="6">Можно прям в красках, не стесняясь в выражениях</textarea>
-          </fieldset>
+          <div class="contest-form__fieldset-wrap">
+            <fieldset class="contest-form__fieldset">
+              <legend class="contest-form__caption">Опишите свои эмоции</legend>
+              <textarea class="contest-form__input contest-form__input--textarea  input-field" name="impressions" id="your-impressions" rows="6">Можно прям в красках, не стесняясь в выражениях</textarea>
+            </fieldset>
+          </div>
 
           <div class="contest-form__submit">
             <button class="contest-form__button button" type="submit">Отправить форму</button>
-            <p class="contest-form__clarify">* — обязательные поля</p>
+            <p class="contest-form__clarify"><span class="contest-form__clarify--colored">*</span> — обязательные поля</p>
           </div>
 
         </form>
