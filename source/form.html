@@ -44,10 +44,10 @@
 
   <main class="page__content">
 
-    <!-- В моем плане дальнейшего оформления картинка-фон никакого отношения к тегу "main" и его дочерним блокам не имеет. Я собирался задать ее фоном для тега "body" (как например у Барбершопа), потому что в ином случае header-у придется задавать абсолютное позиционирование или еще как-то исхитряться, т.к по макету он тоже находится на фоне с этой картинкой. -->
-
     <div class="titlebar">
-      <h1 class="titlebar__header">Конкурс на самое безбашенное путешествие с Пинк</h1>
+      <div class="titlebar__inner inner">
+        <h1 class="titlebar__header">Конкурс на самое безбашенное путешествие с Пинк</h1>
+      </div>
     </div>
 
     <div class="text-container">
@@ -67,15 +67,15 @@
             <legend class="visually-hidden">Как вас зовут?</legend>
             <p class="contest-form__field-bond">
               <label class="contest-form__label" for="your-surname">Фамилия:</label>
-              <input class="contest-form__input" id="your-surname" type="text" name="surname" placeholder="Укажите фамилию *">
+              <input class="contest-form__input input-field" id="your-surname" type="text" name="surname" placeholder="Укажите фамилию *">
             </p>
             <p class="contest-form__field-bond">
               <label class="contest-form__label" for="your-name">Имя:</label>
-              <input class="contest-form__input" id="your-name" type="text" name="name" placeholder="Введите ваше имя *">
+              <input class="contest-form__input input-field" id="your-name" type="text" name="name" placeholder="Введите ваше имя *">
             </p>
             <p class="contest-form__field-bond">
               <label class="contest-form__label" for="your-midname">Отчество:</label>
-              <input class="contest-form__input" id="your-midname" type="text" name="midname" placeholder="Ну и отчество тоже">
+              <input class="contest-form__input input-field" id="your-midname" type="text" name="midname" placeholder="Ну и отчество тоже">
             </p>
           </fieldset>
 
@@ -113,11 +113,11 @@
             <legend class="visually-hidden">Контактные данные</legend>
             <p class="contest-form__field-bond">
               <label class="contest-form__label" for="your-phone">Номер телефона</label>
-              <input class="contest-form__input" id="your-phone" type="tel" name="phone" placeholder="Номер, пожалуйста">
+              <input class="contest-form__input input-field" id="your-phone" type="tel" name="phone" placeholder="Номер, пожалуйста">
             </p>
             <p class="contest-form__field-bond">
               <label class="contest-form__label" for="your-email">Адрес почты</label>
-              <input class="contest-form__input" id="your-email" type="email" name="email" placeholder="Введите почту *">
+              <input class="contest-form__input input-field" id="your-email" type="email" name="email" placeholder="Введите почту *">
             </p>
           </fieldset>
 
@@ -141,7 +141,7 @@
 
           <fieldset class="contest-form__fieldset">
             <legend class="contest-form__caption">Опишите свои эмоции</legend>
-            <textarea class="contest-form__input contest-form__input--textarea" name="impressions" id="your-impressions" rows="10">Можно прям в красках, не стесняясь в выражениях</textarea>
+            <textarea class="contest-form__input contest-form__input--textarea  input-field" name="impressions" id="your-impressions" rows="6">Можно прям в красках, не стесняясь в выражениях</textarea>
           </fieldset>
 
           <div class="contest-form__submit">

@@ -5,3 +5,15 @@
   margin: 0;
   padding: 0;
 }
+
+@mixin button-reset() {
+  font-family: inherit;
+  border: none;
+  margin: 0;
+}
+
+@mixin font-params($size: inherit, $weight: normal, $height: inherit) {
+  font-size: $size;
+  font-weight: $weight;
+  line-height: $height;
+}

@@ -1,0 +1,18 @@
+// Title Bar
+
+.titlebar {
+  color: $white;
+  background-color: $basic-darkgrey;
+}
+
+.titlebar__inner {
+  padding: 0 20px;
+}
+
+.titlebar__header {
+  @include font-params(24px, 300, 32px);
+
+  text-align: center;
+  padding: 35px 0 50px;
+  margin: 0;
+}

@@ -1,0 +1,13 @@
+// Input Field
+
+.input-field {
+  font-family: inherit;
+  width: 100%;
+  border: 2px solid $border-grey;
+  border-radius: 2px;
+  padding: 18px 20px;
+
+  &::placeholder {
+    color: $basic-darkgrey;
+  }
+}

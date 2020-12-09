@@ -1,0 +1,59 @@
+// Contest Form
+
+.contest-form__fieldset {
+  border: none;
+  padding: 0 20px;
+  margin: 0;
+  margin-bottom: 40px;
+
+  &--triumph {
+    background-color: $basic-lightgrey;
+    padding: 40px 20px;
+  }
+
+  &--platform {
+    background-color: $basic-lightgrey;
+    padding: 40px 20px;
+  }
+}
+
+.contest-form__caption {
+  line-height: 18px;
+  text-align: center;
+  text-transform: uppercase;
+  color: $basic-pink;
+}
+
+.contest-form__label {
+  text-transform: uppercase;
+  color: $basic-pink;
+}
+
+.contest-form__input {
+  font-size: 18px;
+
+  &--textarea {
+    resize: vertical;
+  }
+}
+
+.contest-form__option-label {
+  font-size: 18px;
+}
+
+.contest-form__list {
+  @include list-reset;
+}
+
+.contest-form__submit {
+  padding: 0 20px;
+}
+
+.contest-form__button {
+  font-size: 18px;
+  width: 100%;
+}
+
+.contest-form__clarify {
+  text-transform: uppercase;
+}

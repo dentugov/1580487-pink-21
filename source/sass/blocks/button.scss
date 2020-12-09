@@ -1,0 +1,11 @@
+// Button
+
+.button {
+  @include button-reset;
+  color: $white;
+  font-weight: bold;
+  text-transform: uppercase;
+  background-color: $basic-green;
+  padding: 20px;
+  border-radius: 3px;
+}
