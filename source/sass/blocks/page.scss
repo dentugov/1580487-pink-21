@@ -4,10 +4,10 @@
 
 .page__body {
   min-height: 100%;
-  font-size: $basic-font-size;
   font-family: $main-font;
-  line-height: 24px;
-  color: $basic-darkgrey;
+  font-size: $font-size-base;
+  line-height: $line-height-base;
+  color: $basic-text-color;
   margin: 0;
 }
 
