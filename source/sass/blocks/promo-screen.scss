@@ -1,0 +1,23 @@
+// Promo Screen
+
+.promo-screen {
+  color: $white;
+  background-color: $promo-screen-bg;
+  padding-top: 25px;
+}
+
+.promo-screen__inner {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.promo-screen__text {
+  @include font-params($font-size-2xl, $font-weight-thin, $line-height-m);
+  text-align: center;
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+.promo-screen__image {
+  display: block;
+}

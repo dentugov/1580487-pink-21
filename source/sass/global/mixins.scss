@@ -1,0 +1,13 @@
+// Примеси
+
+@mixin list-reset {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+@mixin font-params($fs: $font-size-base, $fw: $font-weight-normal, $lh: $line-height-base) {
+  font-size: $fs;
+  font-weight: $fw;
+  line-height: $lh;
+}

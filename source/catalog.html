@@ -1,19 +1,21 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
 
-<head>
-  <meta charset="utf-8">
-  <title>HTML Academy: Пинк</title>
-</head>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HTML Academy: Пинк</title>
+    <link href="css/style.css" rel="stylesheet">
+  </head>
 
 <body class="page__body">
 
   <header class="page__header page-header">
-    <div class="page-header__inner">
+    <div class="page-header__inner inner">
 
       <nav class="page-header__nav main-nav">
 
-        <div class="main-nav__inner">
+        <div class="main-nav__inner inner">
           <a class="main-nav__logo logo logo--header" href="index.html">
             <img src="https://via.placeholder.com/74x23" width="74" height="23"  alt="Логотип «PINK» — переход на главную страницу">
           </a>
@@ -47,7 +49,7 @@
     </div>
 
     <div class="text-container">
-      <div class="text-container__inner">
+      <div class="text-container__inner inner">
         <p>Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
       </div>
     </div>
@@ -55,7 +57,7 @@
     <section class="panorama">
 
         <div class="panorama__picture">
-          <div class="panorama__inner">
+          <div class="panorama__inner inner">
             <h2 class="panorama__pic-title">Панорама дня</h2>
           </div>
           <div class="panorama__image-box">
@@ -64,7 +66,7 @@
         </div>
 
         <div class="panorama__info">
-          <div class="panorama__inner">
+          <div class="panorama__inner inner">
             <div class="pic-info">
               <div class="pic-info__posted">
                 <span class="pic-info__author">Анна</span>
@@ -87,159 +89,133 @@
 
       <h2 class="visually-hidden">Галерея фотографий пользователей</h2>
 
-      <div class="gallery__inner">
-        <div class="gallery__container">
+      <div class="gallery__inner inner">
 
-          <article class="gallery__item">
-            <div class="gallery__picture">
-              <a class="gallery__link" href="">
-                <img class="gallery__image" src="https://via.placeholder.com/280x180" alt="Фотосъемка автомобиля">
-              </a>
+        <article class="gallery__item">
+          <div class="gallery__picture">
+            <a class="gallery__link" href="">
+              <img class="gallery__image" src="https://via.placeholder.com/280x180" alt="Фотосъемка автомобиля">
+            </a>
+          </div>
+          <div class="gallery__info pic-info">
+            <div class="pic-info__posted">
+              <span class="pic-info__author">Левон</span>
+              <time class="pic-info__date" datetime="2020-11-25">(5 часов назад)</time>
             </div>
-            <div class="gallery__info">
-              <div class="pic-info">
-                <div class="pic-info__posted">
-                  <span class="pic-info__author">Левон</span>
-                  <time class="pic-info__date" datetime="2020-11-25">(5 часов назад)</time>
-                </div>
-                <div class="pic-info__desc">
-                  <p>Вчера он на луну летал, сегодня в руки к нам попал.</p>
-                </div>
-                <div class="pic-info__likes">
-                  <p class="pic-info__like-text">Нравится: <span class="pic-info__like-count">356</span></p>
-                  <button class="pic-info__like-button" type="button"><span class="visually-hidden">Нравится</span><!-- SVG --></button>
-                </div>
-              </div>
+            <p class="pic-info__desc">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+            <div class="pic-info__likes">
+              <p class="pic-info__like-text">Нравится: <span class="pic-info__like-count">356</span></p>
+              <button class="pic-info__like-button" type="button"><span class="visually-hidden">Нравится</span><!-- SVG --></button>
             </div>
-          </article>
+          </div>
+        </article>
 
-          <article class="gallery__item">
-            <div class="gallery__picture">
-              <a class="gallery__link" href="">
-                <img class="gallery__image" src="https://via.placeholder.com/280x180" alt="Барабанная установка">
-              </a>
+        <article class="gallery__item">
+          <div class="gallery__picture">
+            <a class="gallery__link" href="">
+              <img class="gallery__image" src="https://via.placeholder.com/280x180" alt="Барабанная установка">
+            </a>
+          </div>
+          <div class="gallery__info pic-info">
+            <div class="pic-info__posted">
+              <span class="pic-info__author">Антон</span>
+              <time class="pic-info__date" datetime="2020-11-25">(12 часов назад)</time>
             </div>
-            <div class="gallery__info">
-              <div class="pic-info">
-                <div class="pic-info__posted">
-                  <span class="pic-info__author">Антон</span>
-                  <time class="pic-info__date" datetime="2020-11-25">(12 часов назад)</time>
-                </div>
-                <div class="pic-info__desc">
-                  <p>Соседи будут рады!</p>
-                </div>
-                <div class="pic-info__likes">
-                  <p class="pic-info__like-text">Нравится: <span class="pic-info__like-count">666</span></p>
-                  <button class="pic-info__like-button" type="button"><span class="visually-hidden">Нравится</span><!-- SVG --></button>
-                </div>
-              </div>
+            <p class="pic-info__desc">Соседи будут рады!</p>
+            <div class="pic-info__likes">
+              <p class="pic-info__like-text">Нравится: <span class="pic-info__like-count">666</span></p>
+              <button class="pic-info__like-button" type="button"><span class="visually-hidden">Нравится</span><!-- SVG --></button>
             </div>
-          </article>
+          </div>
+        </article>
 
-          <article class="gallery__item">
-            <div class="gallery__picture">
-              <a class="gallery__link" href="">
-                <img class="gallery__image" src="https://via.placeholder.com/280x180" alt="Стеклянная крыша — вид изнутри здания">
-              </a>
+        <article class="gallery__item">
+          <div class="gallery__picture">
+            <a class="gallery__link" href="">
+              <img class="gallery__image" src="https://via.placeholder.com/280x180" alt="Стеклянная крыша — вид изнутри здания">
+            </a>
+          </div>
+          <div class="gallery__info pic-info">
+            <div class="pic-info__posted">
+              <span class="pic-info__author">Борис</span>
+              <time class="pic-info__date" datetime="2020-11-25">(20 часов назад)</time>
             </div>
-            <div class="gallery__info">
-              <div class="pic-info">
-                <div class="pic-info__posted">
-                  <span class="pic-info__author">Борис</span>
-                  <time class="pic-info__date" datetime="2020-11-25">(20 часов назад)</time>
-                </div>
-                <div class="pic-info__desc">
-                  <p>Здесь могла быть ваша цитата о высоком и вечном.</p>
-                </div>
-                <div class="pic-info__likes">
-                  <p class="pic-info__like-text">Нравится: <span class="pic-info__like-count">215</span></p>
-                  <button class="pic-info__like-button" type="button"><span class="visually-hidden">Нравится</span><!-- SVG --></button>
-                </div>
-              </div>
+            <p class="pic-info__desc">Здесь могла быть ваша цитата о высоком и вечном.</p>
+            <div class="pic-info__likes">
+              <p class="pic-info__like-text">Нравится: <span class="pic-info__like-count">215</span></p>
+              <button class="pic-info__like-button" type="button"><span class="visually-hidden">Нравится</span><!-- SVG --></button>
             </div>
-          </article>
+          </div>
+        </article>
 
-          <article class="gallery__item">
-            <div class="gallery__picture">
-              <a class="gallery__link" href="">
-                <img class="gallery__image" src="https://via.placeholder.com/280x180" alt="Кубанская бахча">
-              </a>
+        <article class="gallery__item">
+          <div class="gallery__picture">
+            <a class="gallery__link" href="">
+              <img class="gallery__image" src="https://via.placeholder.com/280x180" alt="Кубанская бахча">
+            </a>
+          </div>
+          <div class="gallery__info pic-info">
+            <div class="pic-info__posted">
+              <span class="pic-info__author">Сергей</span>
+              <time class="pic-info__date" datetime="2020-11-25">(25 часов назад)</time>
             </div>
-            <div class="gallery__info">
-              <div class="pic-info">
-                <div class="pic-info__posted">
-                  <span class="pic-info__author">Сергей</span>
-                  <time class="pic-info__date" datetime="2020-11-25">(25 часов назад)</time>
-                </div>
-                <div class="pic-info__desc">
-                  <p>Самая кубанская в мире!</p>
-                </div>
-                <div class="pic-info__likes">
-                  <p class="pic-info__like-text">Нравится: <span class="pic-info__like-count">4</span></p>
-                  <button class="pic-info__like-button" type="button"><span class="visually-hidden">Нравится</span><!-- SVG --></button>
-                </div>
-              </div>
+            <p class="pic-info__desc">Самая кубанская в мире!</p>
+            <div class="pic-info__likes">
+              <p class="pic-info__like-text">Нравится: <span class="pic-info__like-count">4</span></p>
+              <button class="pic-info__like-button" type="button"><span class="visually-hidden">Нравится</span><!-- SVG --></button>
             </div>
-          </article>
+          </div>
+        </article>
 
-          <article class="gallery__item">
-            <div class="gallery__picture">
-              <a class="gallery__link" href="">
-                <img class="gallery__image" src="https://via.placeholder.com/280x180" alt="Горные просторы">
-              </a>
+        <article class="gallery__item">
+          <div class="gallery__picture">
+            <a class="gallery__link" href="">
+              <img class="gallery__image" src="https://via.placeholder.com/280x180" alt="Горные просторы">
+            </a>
+          </div>
+          <div class="gallery__info pic-info">
+            <div class="pic-info__posted">
+              <span class="pic-info__author">Максим</span>
+              <time class="pic-info__date" datetime="2020-11-25">(40 часов назад)</time>
             </div>
-            <div class="gallery__info">
-              <div class="pic-info">
-                <div class="pic-info__posted">
-                  <span class="pic-info__author">Максим</span>
-                  <time class="pic-info__date" datetime="2020-11-25">(40 часов назад)</time>
-                </div>
-                <div class="pic-info__desc">
-                  <p>Где снег-то?</p>
-                </div>
-                <div class="pic-info__likes">
-                  <p class="pic-info__like-text">Нравится: <span class="pic-info__like-count">150</span></p>
-                  <button class="pic-info__like-button" type="button"><span class="visually-hidden">Нравится</span><!-- SVG --></button>
-                </div>
-              </div>
+            <p class="pic-info__desc">Где снег-то?</p>
+            <div class="pic-info__likes">
+              <p class="pic-info__like-text">Нравится: <span class="pic-info__like-count">150</span></p>
+              <button class="pic-info__like-button" type="button"><span class="visually-hidden">Нравится</span><!-- SVG --></button>
             </div>
-          </article>
+          </div>
+        </article>
 
-          <article class="gallery__item">
-            <div class="gallery__picture">
-              <a class="gallery__link" href="">
-                <img class="gallery__image" src="https://via.placeholder.com/280x180" alt="Вид из иллюминатора в полете">
-              </a>
+        <article class="gallery__item">
+          <div class="gallery__picture">
+            <a class="gallery__link" href="">
+              <img class="gallery__image" src="https://via.placeholder.com/280x180" alt="Вид из иллюминатора в полете">
+            </a>
+          </div>
+          <div class="gallery__info pic-info">
+            <div class="pic-info__posted">
+              <span class="pic-info__author">Надежда</span>
+              <time class="pic-info__date" datetime="2020-11-25">(45 часов назад)</time>
             </div>
-            <div class="gallery__info">
-              <div class="pic-info">
-                <div class="pic-info__posted">
-                  <span class="pic-info__author">Надежда</span>
-                  <time class="pic-info__date" datetime="2020-11-25">(45 часов назад)</time>
-                </div>
-                <div class="pic-info__desc">
-                  <p>Всем GM и взаимные лайки!</p>
-                </div>
-                <div class="pic-info__likes">
-                  <p class="pic-info__like-text">Нравится: <span class="pic-info__like-count">2560</span></p>
-                  <button class="pic-info__like-button" type="button"><span class="visually-hidden">Нравится</span><!-- SVG --></button>
-                </div>
-              </div>
+            <p class="pic-info__desc">Всем GM и взаимные лайки!</p>
+            <div class="pic-info__likes">
+              <p class="pic-info__like-text">Нравится: <span class="pic-info__like-count">2560</span></p>
+              <button class="pic-info__like-button" type="button"><span class="visually-hidden">Нравится</span><!-- SVG --></button>
             </div>
-          </article>
+          </div>
+        </article>
 
-        </div>
       </div>
     </section>
 
     <div class="text-container">
-      <div class="text-container__inner">
+      <div class="text-container__inner inner">
         <p>Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
       </div>
     </div>
 
     <section class="publish">
-      <div class="publish__inner">
+      <div class="publish__inner inner">
 
         <h2 class="visually-hidden">Опубликовать свою фотографию</h2>
 
@@ -298,7 +274,7 @@
   </main>
 
   <footer class="page__footer page-footer">
-    <div class="page-footer__inner">
+    <div class="page-footer__inner inner">
 
       <a class="page-footer__logo logo logo--footer" href="index.html">
         <img src="https://via.placeholder.com/74x23" width="74" height="23" alt="Логотип «PINK» — переход на главную страницу">

@@ -1,0 +1,21 @@
+// Main Navigation
+
+.main-nav__list {
+  @include list-reset;
+}
+
+.main-nav__inner {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.main-nav__item {
+  text-align: center;
+}
+
+.main-nav__link {
+  @include font-params($font-size-l, $font-weight-bold);
+  color: $white;
+  text-transform: uppercase;
+  text-decoration: none;
+}
