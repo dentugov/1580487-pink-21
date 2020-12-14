@@ -12,12 +12,14 @@
     padding-top: 0;
   }
 
-  &--triumph {
-    background-color: $page-section-bg-color;
-  }
+  @media screen and (max-width: $mobile-width-only) {
+    &--triumph {
+      background-color: $page-section-bg-color;
+    }
 
-  &--platform {
-    background-color: $page-section-bg-color;
+    &--platform {
+      background-color: $page-section-bg-color;
+    }
   }
 }
 
@@ -45,6 +47,7 @@
 
   &--textarea {
     resize: vertical;
+    height: auto;
   }
 }
 
