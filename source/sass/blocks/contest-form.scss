@@ -1,0 +1,85 @@
+// Contest Form
+
+.contest-form__inner {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.contest-form__fieldset-wrap {
+  padding: 42px 20px;
+
+  &:first-child {
+    padding-top: 0;
+  }
+
+  @media screen and (max-width: $mobile-width-only) {
+    &--triumph {
+      background-color: $page-section-bg-color;
+    }
+
+    &--platform {
+      background-color: $page-section-bg-color;
+    }
+  }
+}
+
+.contest-form__fieldset {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+.contest-form__caption {
+  line-height: $line-height-s;
+  text-align: center;
+  text-transform: uppercase;
+  color: $contest-caption-color;
+  margin-bottom: 18px;
+}
+
+.contest-form__label {
+  text-transform: uppercase;
+  color: $contest-label-color;
+}
+
+.contest-form__input {
+  font-size: $font-size-m;
+
+  &--textarea {
+    resize: vertical;
+    height: auto;
+  }
+}
+
+.contest-form__field-bond {
+  margin: 0;
+
+  &:not(:last-child) {
+    margin-bottom: 25px;
+  }
+}
+
+.contest-form__option-label {
+  font-size: $font-size-m;
+}
+
+.contest-form__list {
+  @include list-reset;
+}
+
+.contest-form__submit {
+  padding: 0 20px;
+}
+
+.contest-form__button {
+  font-size: $font-size-m;
+  width: 100%;
+}
+
+.contest-form__clarify {
+  text-transform: uppercase;
+
+  &--colored {
+    color: $basic-accent-color;
+  }
+}

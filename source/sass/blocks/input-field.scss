@@ -1,0 +1,14 @@
+// Input Field
+
+.input-field {
+  font-family: inherit;
+  width: 100%;
+  border: 2px solid $basic-border-color;
+  border-radius: 2px;
+  padding: 16px 20px;
+  height: 59px;
+
+  &::placeholder {
+    color: $basic-text-color;
+  }
+}
