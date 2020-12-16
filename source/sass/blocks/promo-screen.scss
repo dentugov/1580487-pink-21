@@ -2,15 +2,22 @@
 
 .promo-screen {
   color: $white;
-  background-color: $basic-darkgrey;
-  padding: 25px 0 0;
+  background-color: $promo-screen-bg;
+  padding-top: 25px;
+}
+
+.promo-screen__inner {
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .promo-screen__text {
-  font-size: 24px;
-  line-height: 29px;
+  @include font-params($font-size-2xl, $font-weight-thin, $line-height-m);
   text-align: center;
-  font-weight: 300;
   margin: 0;
   margin-bottom: 30px;
+}
+
+.promo-screen__image {
+  display: block;
 }

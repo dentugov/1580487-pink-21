@@ -1,4 +1,9 @@
 .page-header {
   color: $white;
-  background-color: $basic-darkgrey;
+  background-color: $page-header-bg;
+}
+
+.page-header__inner {
+  padding-left: 0;
+  padding-right: 0;
 }
