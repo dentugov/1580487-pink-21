@@ -1,0 +1,13 @@
+// Rounded button
+
+.button-rounded {
+  @include font-params($font-size-l, $font-weight-bold);
+  font-family: inherit;
+  border: 3px solid;
+  border-radius: 30px;
+  background-color: transparent;
+  width: 100%;
+  padding: 12px 12px 13px;
+  margin: 0;
+  cursor: pointer;
+}

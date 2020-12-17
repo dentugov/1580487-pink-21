@@ -45,7 +45,9 @@
   <main class="page__content">
 
     <div class="titlebar">
-      <h1 class="titlebar__header">Фотографии пользователей</h1>
+      <div class="titlebar__inner inner">
+        <h1 class="titlebar__header">Фотографии пользователей</h1>
+      </div>
     </div>
 
     <div class="text-container">
@@ -57,11 +59,13 @@
     <section class="panorama">
 
         <div class="panorama__picture">
-          <div class="panorama__inner inner">
-            <h2 class="panorama__pic-title">Панорама дня</h2>
+          <div class="panorama__title-box">
+            <div class="panorama__inner inner">
+              <h2 class="panorama__pic-title">Панорама дня</h2>
+            </div>
           </div>
           <div class="panorama__image-box">
-            <img class="panorama__image" src="https://via.placeholder.com/320x127" alt="Подвесной мост через ущелье">
+            <img class="panorama__image" src="https://via.placeholder.com/320x137" alt="Подвесной мост через ущелье">
           </div>
         </div>
 
@@ -222,7 +226,7 @@
         <form class="publish__form" action="https://echo.htmlacademy.ru" method="GET">
 
           <div class="publish__media-preview">
-            <img src="https://via.placeholder.com/280x374" alt="Закат над зимней дорогой">
+            <img class="publish__prev-image" src="https://via.placeholder.com/280x374" alt="Закат над зимней дорогой">
           </div>
 
           <fieldset class="publish__filters">
@@ -262,8 +266,8 @@
           </fieldset>
 
           <div class="publish__submit">
-            <button class="publish__button button" type="submit">Запостить</button>
-            <button class="publish__button publish__button--reset button" type="reset">Отмена</button>
+            <button class="publish__upload-button button-rounded" type="submit">Запостить</button>
+            <button class="publish__cancel-button button-rounded" type="reset">Отмена</button>
           </div>
 
         </form>

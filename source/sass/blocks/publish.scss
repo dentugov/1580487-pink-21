@@ -1,0 +1,39 @@
+// Publish
+
+.publish__inner {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.publish__form {
+  background-color: $page-section-bg-color;
+}
+
+.publish__media-preview {
+  padding: 20px;
+}
+
+.publish__prev-image {
+  display: block;
+}
+
+.publish__filters {
+  border: none;
+  border-bottom: 1px solid $publish-border-color;
+  padding: 20px;
+}
+
+.publish__submit {
+  padding: 40px 20px;
+}
+
+.publish__upload-button {
+  color: $basic-accent-color;
+  border-color: $basic-accent-color;
+  margin-bottom: 12px;
+}
+
+.publish__cancel-button {
+  color: $cancel-button-color;
+  border-color: $cancel-button-color;
+}
