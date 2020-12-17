@@ -1,18 +1,33 @@
 // Panorama
 
-.panorama__inner {
-  padding: 0 20px;
+.panorama {
+  padding-bottom: 20px;
 }
 
 .panorama__pic-title {
-  @include font-params(12px, 700);
+  @include font-params($font-size-s, $font-weight-bold);
   text-transform: uppercase;
   color: $white;
-  background-color: $basic-pink;
+  background-color: $basic-accent-color;
   margin: 0;
 }
 
 .panorama__image {
   display: block;
   width: 100%;
+}
+
+.pic-info__author {
+  font-weight: $font-weight-bold;
+}
+
+.pic-info__date {
+  @include font-params($font-size-s, $font-weight-thin);
+  text-transform: uppercase;
+}
+
+.pic-info__like-text {
+  font-size: $font-size-s;
+  text-transform: uppercase;
+  color: $basic-accent-color;
 }
