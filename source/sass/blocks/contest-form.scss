@@ -1,24 +1,71 @@
 // Contest Form
 
-.contest-form__inner {
-  padding-left: 0;
-  padding-right: 0;
+@media screen and (max-width: $mobile-width-only) {
+  .contest-form__inner {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.contest-form__container {
+  display: grid;
+  grid-template-columns: 100%;
+  row-gap: 42px;
+
+  @media screen and (min-width: $tablet-width) {
+    row-gap: 60px;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 70px;
+  }
 }
 
 .contest-form__fieldset-wrap {
-  padding: 42px 20px;
-
-  &:first-child {
-    padding-top: 0;
-  }
-
   @media screen and (max-width: $mobile-width-only) {
+    padding: 0 20px;
+
     &--triumph {
+      padding-top: 42px;
+      padding-bottom: 42px;
       background-color: $page-section-bg-color;
     }
 
     &--platform {
+      padding-top: 42px;
+      padding-bottom: 42px;
       background-color: $page-section-bg-color;
+    }
+  }
+
+  @media screen and (min-width: $tablet-width) {
+    &--triumph {
+      grid-row: 4 / 5;
+    }
+
+    &--platform {
+      grid-row: 2 / 3;
+    }
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    &--triumph {
+      grid-row: 3 / 4;
+      grid-column: 1 / -1;
+    }
+
+    &--platform {
+      grid-row: 1 / 2;
+      grid-column: 2 / 3;
+    }
+
+    &--contacts {
+      grid-column: 1 / -1;
+    }
+
+    &--impressions {
+      grid-column: 1 / -1;
     }
   }
 }
@@ -27,6 +74,24 @@
   border: none;
   padding: 0;
   margin: 0;
+
+  @media screen and (min-width: $tablet-width) {
+    border: 2px solid $basic-border-color;
+    padding: 50px 60px;
+
+    &--noborder {
+      border: none;
+      padding: 0;
+    }
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    &--contacts {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+  }
 }
 
 .contest-form__caption {
@@ -34,12 +99,58 @@
   text-align: center;
   text-transform: uppercase;
   color: $contest-caption-color;
+  padding: 0 25px;
   margin-bottom: 18px;
+
+  @media screen and (max-width: $mobile-width-only) {
+    &--no-mobil {
+      @include visually-hidden;
+    }
+  }
+
+  @media screen and (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    &--no-desktop {
+      @include visually-hidden;
+    }
+  }
+}
+
+.contest-form__field-bond {
+  margin: 0;
+
+  &:not(:last-child) {
+    margin-bottom: 25px;
+  }
+
+  @media screen and (min-width: $tablet-width) {
+    display: flex;
+    align-items: center;
+
+    &--contact {
+      flex-direction: column-reverse;
+      align-items: stretch;
+    }
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    &--contact {
+      width: calc(50% - 35px);
+    }
+
+    &--contact:not(:last-child) {
+      margin-bottom: 0;
+    }
+  }
 }
 
 .contest-form__label {
   text-transform: uppercase;
   color: $contest-label-color;
+  margin-right: 20px;
 }
 
 .contest-form__input {
@@ -51,11 +162,19 @@
   }
 }
 
-.contest-form__field-bond {
-  margin: 0;
+@media screen and (min-width: $tablet-width) {
+  .contest-form__input-contact {
+    position: relative;
 
-  &:not(:last-child) {
-    margin-bottom: 25px;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 59px;
+      height: 59px;
+      background-color: $basic-border-color;
+    }
   }
 }
 
@@ -65,15 +184,41 @@
 
 .contest-form__list {
   @include list-reset;
+
+  @media screen and (min-width: $desktop-width) {
+    &--triumph {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 42px 20px;
+    }
+  }
 }
 
 .contest-form__submit {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
   padding: 0 20px;
+
+  @media screen and (min-width: $tablet-width) {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    grid-column: 1 / -1;
+  }
 }
 
 .contest-form__button {
   font-size: $font-size-m;
-  width: 100%;
+  min-width: 100%;
+
+  @media screen and (min-width: $tablet-width) {
+    min-width: 296px;
+  }
 }
 
 .contest-form__clarify {
