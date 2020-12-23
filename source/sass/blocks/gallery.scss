@@ -1,13 +1,29 @@
 // Gallery
 
-.gallery__item {
-  margin-bottom: 20px;
+.gallery__inner {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 100%;
 
-  &:last-child {
-    margin-bottom: 0;
+  @media screen and (min-width: $tablet-width) {
+    grid-template-columns: 1fr 1fr;
   }
+
+  @media screen and (min-width: $desktop-width) {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+.gallery__item {
+  display: flex;
+  flex-direction: column;
+}
+
+.gallery__info {
+  flex-grow: 1;
 }
 
 .gallery__image {
   display: block;
+  width: 100%;
 }

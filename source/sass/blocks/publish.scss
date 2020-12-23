@@ -1,39 +1,118 @@
 // Publish
 
-.publish__inner {
-  padding-left: 0;
-  padding-right: 0;
+@media screen and (max-width: $tablet-and-mobile-width) {
+  .publish__inner {
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 
 .publish__form {
   background-color: $page-section-bg-color;
+  padding: 20px 20px 40px;
+
+  @media screen and (min-width: $tablet-width) {
+    display: grid;
+    grid-template-rows: 1fr min-content;
+    grid-template-columns: 300px 1fr;
+    column-gap: 45px;
+    padding: 55px 20px;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    column-gap: 90px;
+    padding: 57px 60px 57px 80px;
+  }
 }
 
-.publish__media-preview {
-  padding: 20px;
+@media screen and (min-width: $tablet-width) {
+  .publish__media-preview {
+    grid-row: 1 / -1;
+  }
 }
 
 .publish__prev-image {
   display: block;
+  width: 100%;
 }
 
 .publish__filters {
   border: none;
-  border-bottom: 1px solid $publish-border-color;
-  padding: 20px;
+  padding: 0;
+  margin: 0;
+
+  @media screen and (max-width: $mobile-width-only) {
+    border-bottom: 1px solid $publish-border-color;
+    margin-bottom: 40px;
+  }
+}
+
+.publish__filters-nav {
+  display: none;
+  text-align: center;
+
+  @media screen and (max-width: $mobile-width-only) {
+    display: block;
+  }
+}
+
+.publish__filter-range {
+  padding: 20px 0;
+  margin: 0;
+
+  @media screen and (max-width: $mobile-width-only) {
+    display: none;
+
+    &--active {
+      display: block;
+    }
+  }
+
+  @media screen and (min-width: $tablet-width) {
+    border-bottom: 2px solid $basic-border-color;
+    padding-left: 55px;
+    padding-right: 18px;
+  }
 }
 
 .publish__submit {
-  padding: 40px 20px;
+  @media screen and (min-width: $tablet-width) {
+    padding: 0 2px;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0;
+  }
 }
 
 .publish__upload-button {
   color: $basic-accent-color;
   border-color: $basic-accent-color;
   margin-bottom: 12px;
+
+  @media screen and (min-width: $tablet-width) {
+    margin-bottom: 24px;
+    max-width: 260px;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    margin-bottom: 0;
+    max-width: 183px;
+  }
 }
 
 .publish__cancel-button {
   color: $cancel-button-color;
   border-color: $cancel-button-color;
+
+  @media screen and (min-width: $tablet-width) {
+    max-width: 260px;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    max-width: 183px;
+  }
 }

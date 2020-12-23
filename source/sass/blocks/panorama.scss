@@ -4,17 +4,44 @@
   padding-bottom: 20px;
 }
 
+.panorama__inner {
+  position: relative;
+}
+
 .panorama__pic-title {
   @include font-params($font-size-s, $font-weight-bold);
   text-transform: uppercase;
   color: $white;
   background-color: $basic-accent-color;
+  position: absolute;
+  top: 0;
+  right: 20px;
+  padding: 6px 20px;
   margin: 0;
+
+  @media screen and (min-width: $tablet-width) {
+    top: 57px;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    top: 54px;
+    right: 10px;
+  }
 }
 
 .panorama__image {
   display: block;
   width: 100%;
+  height: 137px;
+  object-fit: cover;
+
+  @media screen and (min-width: $tablet-width) {
+    height: 510px;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    height: 506px;
+  }
 }
 
 .pic-info__author {

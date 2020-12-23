@@ -1,6 +1,59 @@
 // Picture Info
 
 .pic-info {
+  display: flex;
+  flex-direction: column;
   background-color: $pic-info-bg;
   padding: 20px 15px;
+
+  @media screen and (min-width: $tablet-width) {
+    &--panorama {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+}
+
+.pic-info__desc {
+  flex-grow: 1;
+
+  @media screen and (min-width: $tablet-width) {
+    &--panorama {
+      grid-row: 2 / 3;
+      grid-column: 1 / -1;
+    }
+  }
+}
+
+.pic-info__likes {
+  display: flex;
+
+  @media screen and (min-width: $tablet-width) {
+    justify-content: space-between;
+
+    &--panorama {
+      justify-content: flex-end;
+    }
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+.pic-info__like-text {
+  margin: 0;
+
+  @media screen and (min-width: $tablet-width) {
+    &--panorama {
+      margin-right: 20px;
+    }
+  }
+}
+
+.pic-info__like-button {
+  @media screen and (max-width: $mobile-width-only) {
+    order: -1;
+    margin-right: 20px;
+  }
 }
