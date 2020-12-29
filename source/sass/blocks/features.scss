@@ -4,25 +4,60 @@
   @include font-params($font-size-2xl, $font-weight-thin, $line-height-m);
   text-align: center;
   padding: 40px 0 30px;
+
+  @include media-tablet {
+    font-size: $font-size-4xl;
+    line-height: $line-height-4xl;
+  }
+
+  @include media-desktop {
+    font-size: $font-size-5xl;
+    line-height: $line-height-5xl;
+  }
 }
 
 .features__text p {
   margin: 0;
-  margin-bottom: 30px;
-}
 
-.features__text p:last-child {
-  margin-bottom: 0;
+  @include media-mobil-only {
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
 }
 
 .features__benefits {
   background-color: $page-section-bg-color;
-  padding: 85px 0 325px;
 }
 
 .features__benefits-list {
   @include list-reset;
   text-align: center;
+  padding-top: 85px;
+  padding-bottom: 325px;
+
+  @include media-tablet {
+    text-align: left;
+    padding-top: 80px;
+    padding-left: 310px;
+    padding-bottom: 42px;
+  }
+
+  @include media-desktop {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 20px;
+    font-size: $font-size-l;
+    line-height: $line-height-l;
+    text-align: center;
+    padding-left: 0;
+  }
+}
+
+@include media-desktop {
+  .features__benefit-item {
+    padding: 0 20px;
+  }
 }
 
 .features__benefit-title {
@@ -35,13 +70,21 @@
 .features__research {
   padding: 100px 0 80px;
 
-  @media screen and (max-width: $mobile-width-only) {
+  @include media-mobil-only {
     display: none;
+  }
+
+  @include media-desktop {
+    background-color: $page-section-bg-color;
   }
 }
 
 .features__research-container {
   padding-left: 310px;
+
+  @include media-desktop {
+    padding-left: 370px;
+  }
 }
 
 .features__research-title {

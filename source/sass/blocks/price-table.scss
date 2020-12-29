@@ -8,18 +8,22 @@
 
 .price-table__container {
   position: relative;
-  left: 50%;
-  width: calc(100% * 3);
-  transform: translateX(-50%);
   border-collapse: collapse;
+  width: 100%;
+
+  @include media-mobil-only {
+    left: 50%;
+    width: calc(100% * 3);
+    transform: translateX(-50%);
+  }
 }
 
 .price-table__header {
   color: $white;
   text-transform: uppercase;
   background-color: $price-table-header-bg;
-  width: calc(100% / 3);
-  padding: 20px 0 30px;
+  width: calc(100% / 4);
+  padding: 12px 0;
 
   &:not(:last-child) {
     border-right: 2px solid $basic-border-color;
@@ -28,40 +32,63 @@
   &--transparent {
     background-color: transparent;
   }
-}
 
-.price-table__tariff-includes {
-  border: 2px solid $basic-border-color;
-  background-color: $price-table-body-bg;
-}
-
-.price-table__tariff-item {
-  border: 2px solid $basic-border-color;
-  background-color: $price-table-body-bg;
-
-  @media screen and (max-width: $mobile-width-only) {
-    &::before {
-      content: attr(data-tariff);
-    }
-  }
-}
-
-@media screen and (max-width: $mobile-width-only) {
-  .price-table__no-mobil {
-    display: none;
+  @include media-mobil-only {
+    width: calc(100% / 3);
+    padding: 20px 0 30px;
   }
 }
 
 .price-table__tariff-name {
   @include font-params($font-size-m, $font-weight-bold);
   margin: 0;
+
+  @include media-desktop {
+    font-size: $font-size-l;
+    line-height: $line-height-l;
+  }
 }
 
 .price-table__tariff-value {
   @include font-params($font-size-l, $font-weight-thin);
   margin: 0;
+
+  @include media-desktop {
+    font-size: $font-size-2xl;
+    line-height: $line-height-l;
+  }
+}
+
+.price-table__tariff-includes {
+  border: 2px solid $basic-border-color;
+  background-color: $price-table-body-bg;
+
+  @include media-desktop {
+    font-size: $font-size-l;
+  }
+}
+
+.price-table__tariff-item {
+  border: 2px solid $basic-border-color;
+  background-color: $price-table-body-bg;
+
+  @include media-mobil-only {
+    &::before {
+      content: attr(data-tariff);
+    }
+  }
+}
+
+@include media-mobil-only {
+  .price-table__no-mobil {
+    display: none;
+  }
 }
 
 .price-table__pagination {
   text-align: center;
+
+  @include media-tablet {
+    display: none;
+  }
 }

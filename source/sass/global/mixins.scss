@@ -18,3 +18,40 @@
   border: none;
   margin: 0;
 }
+
+@mixin visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+@mixin media-mobil-only {
+  @media screen and (max-width: $mobile-width-only) {
+    @content;
+  }
+}
+
+@mixin media-except-desktop {
+  @media screen and (max-width: $except-for-desktop) {
+    @content;
+  }
+}
+
+@mixin media-tablet {
+  @media screen and (min-width: $tablet-width) {
+    @content;
+  }
+}
+
+@mixin media-desktop {
+  @media screen and (min-width: $desktop-width) {
+    @content;
+  }
+}

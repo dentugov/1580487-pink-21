@@ -1,13 +1,21 @@
 // Download App
 
 .download-app {
+  text-align: center;
   background-color: $download-app-bg;
   padding: 28px 0 35px;
+
+  @include media-tablet {
+    background-color: transparent;
+  }
 }
 
-.download-app__inner {
-  padding-left: 20px;
-  padding-right: 20px;
+
+@include media-mobil-only {
+  .download-app__inner {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }
 
 .download-app__link {
@@ -18,8 +26,19 @@
 
 .download-app__list-logos {
   @include list-reset;
+  display: flex;
+  justify-content: center;
+}
+
+.download-app__item-logo {
+  margin: 0 17px;
 }
 
 .download-app__desc {
+  font-weight: $font-weight-thin;
   margin: 0;
+
+  @include media-tablet {
+    font-size: $font-size-l;
+  }
 }

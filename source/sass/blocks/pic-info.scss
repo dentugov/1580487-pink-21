@@ -1,6 +1,59 @@
 // Picture Info
 
 .pic-info {
+  display: flex;
+  flex-direction: column;
   background-color: $pic-info-bg;
   padding: 20px 15px;
+
+  @include media-tablet {
+    &--panorama {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+}
+
+.pic-info__desc {
+  flex-grow: 1;
+
+  @include media-tablet {
+    &--panorama {
+      grid-row: 2 / 3;
+      grid-column: 1 / -1;
+    }
+  }
+}
+
+.pic-info__likes {
+  display: flex;
+
+  @include media-tablet {
+    justify-content: space-between;
+
+    &--panorama {
+      justify-content: flex-end;
+    }
+  }
+
+  @include media-desktop {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+.pic-info__like-text {
+  margin: 0;
+
+  @include media-tablet {
+    &--panorama {
+      margin-right: 20px;
+    }
+  }
+}
+
+.pic-info__like-button {
+  @include media-mobil-only {
+    order: -1;
+    margin-right: 20px;
+  }
 }
