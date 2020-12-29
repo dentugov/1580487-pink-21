@@ -30,7 +30,7 @@
   align-items: center;
   font-style: normal;
 
-  @media screen and (max-width: $mobile-width-only) {
+  @include media-mobil-only {
     order: -1;
   }
 }
@@ -41,7 +41,7 @@
 }
 
 .reviews__author-meta {
-  @media screen and (max-width: $mobile-width-only) {
+  @include media-mobil-only {
     display: none;
   }
 }
@@ -49,7 +49,7 @@
 .reviews__navigation {
   position: absolute;
 
-  @media screen and (max-width: $tablet-and-mobile-width) {
+  @include media-except-desktop {
     display: none;
   }
 }
@@ -57,7 +57,7 @@
 .reviews__pagination {
   text-align: center;
 
-  @media screen and (min-width: $desktop-width) {
+  @include media-desktop {
     display: none;
   }
 }

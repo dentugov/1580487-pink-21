@@ -21,7 +21,7 @@ img {
   padding: 0 20px;
   margin: 0 auto;
 
-  @media screen and (min-width: $desktop-width) {
+  @include media-desktop {
     padding: 0 10px;
   }
 }

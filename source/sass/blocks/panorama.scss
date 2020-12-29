@@ -19,11 +19,11 @@
   padding: 6px 20px;
   margin: 0;
 
-  @media screen and (min-width: $tablet-width) {
+  @include media-tablet {
     top: 57px;
   }
 
-  @media screen and (min-width: $desktop-width) {
+  @include media-desktop {
     top: 54px;
     right: 10px;
   }
@@ -35,11 +35,11 @@
   height: 137px;
   object-fit: cover;
 
-  @media screen and (min-width: $tablet-width) {
+  @include media-tablet {
     height: 510px;
   }
 
-  @media screen and (min-width: $desktop-width) {
+  @include media-desktop {
     height: 506px;
   }
 }

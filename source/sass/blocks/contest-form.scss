@@ -1,6 +1,6 @@
 // Contest Form
 
-@media screen and (max-width: $mobile-width-only) {
+@include media-mobil-only {
   .contest-form__inner {
     padding-left: 0;
     padding-right: 0;
@@ -9,21 +9,59 @@
 
 .contest-form__container {
   display: grid;
-  grid-template-columns: 100%;
+  grid-template-areas:
+    "N"
+    "T"
+    "C"
+    "P"
+    "I"
+    "S";
   row-gap: 42px;
 
-  @media screen and (min-width: $tablet-width) {
+  @include media-tablet {
+    grid-template-areas:
+      "N"
+      "P"
+      "C"
+      "T"
+      "I"
+      "S";
     row-gap: 60px;
   }
 
-  @media screen and (min-width: $desktop-width) {
-    grid-template-columns: 1fr 1fr;
+  @include media-desktop {
+    grid-template-areas:
+      "N P"
+      "C C"
+      "T T"
+      "I I"
+      "S S";
     column-gap: 70px;
   }
 }
 
 .contest-form__fieldset-wrap {
-  @media screen and (max-width: $mobile-width-only) {
+  &--name {
+    grid-area: N;
+  }
+
+  &--triumph {
+    grid-area: T;
+  }
+
+  &--platform {
+    grid-area: P;
+  }
+
+  &--contacts {
+    grid-area: C;
+  }
+
+  &--impressions {
+    grid-area: I;
+  }
+
+  @include media-mobil-only {
     padding: 0 20px;
 
     &--triumph {
@@ -38,36 +76,6 @@
       background-color: $page-section-bg-color;
     }
   }
-
-  @media screen and (min-width: $tablet-width) {
-    &--triumph {
-      grid-row: 4 / 5;
-    }
-
-    &--platform {
-      grid-row: 2 / 3;
-    }
-  }
-
-  @media screen and (min-width: $desktop-width) {
-    &--triumph {
-      grid-row: 3 / 4;
-      grid-column: 1 / -1;
-    }
-
-    &--platform {
-      grid-row: 1 / 2;
-      grid-column: 2 / 3;
-    }
-
-    &--contacts {
-      grid-column: 1 / -1;
-    }
-
-    &--impressions {
-      grid-column: 1 / -1;
-    }
-  }
 }
 
 .contest-form__fieldset {
@@ -75,7 +83,7 @@
   padding: 0;
   margin: 0;
 
-  @media screen and (min-width: $tablet-width) {
+  @include media-tablet {
     border: 2px solid $basic-border-color;
     padding: 50px 60px;
 
@@ -85,7 +93,7 @@
     }
   }
 
-  @media screen and (min-width: $desktop-width) {
+  @include media-desktop {
     &--contacts {
       display: flex;
       flex-wrap: wrap;
@@ -102,17 +110,17 @@
   padding: 0 25px;
   margin-bottom: 18px;
 
-  @media screen and (max-width: $mobile-width-only) {
+  @include media-mobil-only {
     &--no-mobil {
       @include visually-hidden;
     }
   }
 
-  @media screen and (min-width: $tablet-width) {
+  @include media-tablet {
     margin-bottom: 0;
   }
 
-  @media screen and (min-width: $desktop-width) {
+  @include media-desktop {
     &--no-desktop {
       @include visually-hidden;
     }
@@ -126,7 +134,7 @@
     margin-bottom: 25px;
   }
 
-  @media screen and (min-width: $tablet-width) {
+  @include media-tablet {
     display: flex;
     align-items: center;
 
@@ -136,7 +144,7 @@
     }
   }
 
-  @media screen and (min-width: $desktop-width) {
+  @include media-desktop {
     &--contact {
       width: calc(50% - 35px);
     }
@@ -162,7 +170,7 @@
   }
 }
 
-@media screen and (min-width: $tablet-width) {
+@include media-tablet {
   .contest-form__input-contact {
     position: relative;
 
@@ -185,7 +193,7 @@
 .contest-form__list {
   @include list-reset;
 
-  @media screen and (min-width: $desktop-width) {
+  @include media-desktop {
     &--triumph {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
@@ -195,20 +203,17 @@
 }
 
 .contest-form__submit {
+  grid-area: S;
   display: flex;
   flex-direction: column;
   align-items: center;
   flex-wrap: wrap;
   padding: 0 20px;
 
-  @media screen and (min-width: $tablet-width) {
+  @include media-tablet {
     flex-direction: row;
     justify-content: space-between;
     padding: 0;
-  }
-
-  @media screen and (min-width: $desktop-width) {
-    grid-column: 1 / -1;
   }
 }
 
@@ -216,7 +221,7 @@
   font-size: $font-size-m;
   min-width: 100%;
 
-  @media screen and (min-width: $tablet-width) {
+  @include media-tablet {
     min-width: 296px;
   }
 }

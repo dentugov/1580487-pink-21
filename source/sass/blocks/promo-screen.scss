@@ -10,23 +10,23 @@
   display: grid;
   grid-template-columns: 100%;
 
-  @media screen and (max-width: $mobile-width-only) {
+  @include media-mobil-only {
     padding-left: 0;
     padding-right: 0;
   }
 
-  @media screen and (min-width: $tablet-width) {
+  @include media-tablet {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: min-content 1fr;
     column-gap: 20px;
   }
 
-  @media screen and (min-width: $desktop-width) {
+  @include media-desktop {
     grid-template-columns: 1fr 2fr;
   }
 }
 
-@media screen and (min-width: $tablet-width) {
+@include media-tablet {
   .promo-screen__image-box {
     grid-row: 1 / -1;
     grid-column: 1 / -1;
@@ -38,12 +38,12 @@
 .promo-screen__image {
   display: block;
 
-  @media screen and (min-width: $tablet-width) {
+  @include media-tablet {
     width: 620px;
     height: 545px;
   }
 
-  @media screen and (min-width: $desktop-width) {
+  @include media-desktop {
     width: 620px;
     height: 645px;
   }
@@ -55,7 +55,7 @@
   margin: 0;
   margin-bottom: 30px;
 
-  @media screen and (min-width: $tablet-width) {
+  @include media-tablet {
     font-size: $font-size-4xl;
     line-height: $line-height-3xl;
     order: 1;
@@ -63,14 +63,14 @@
     grid-column: 1 / 2;
   }
 
-  @media screen and (min-width: $desktop-width) {
+  @include media-desktop {
     font-size: $font-size-5xl;
     line-height: $line-height-5xl;
   }
 }
 
 
-@media screen and (min-width: $tablet-width) {
+@include media-tablet {
   .promo-screen__download-app {
     grid-row: 2 / -1;
     grid-column: 1 / 2;

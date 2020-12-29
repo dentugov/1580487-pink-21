@@ -5,13 +5,14 @@
   background-color: $download-app-bg;
   padding: 28px 0 35px;
 
-  @media screen and (min-width: $tablet-width) {
+  @include media-tablet {
     background-color: transparent;
   }
 }
 
-.download-app__inner {
-  @media screen and (max-width: $mobile-width-only) {
+
+@include media-mobil-only {
+  .download-app__inner {
     padding-left: 20px;
     padding-right: 20px;
   }
@@ -37,7 +38,7 @@
   font-weight: $font-weight-thin;
   margin: 0;
 
-  @media screen and (min-width: $tablet-width) {
+  @include media-tablet {
     font-size: $font-size-l;
   }
 }

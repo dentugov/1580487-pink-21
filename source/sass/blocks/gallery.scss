@@ -5,11 +5,11 @@
   gap: 20px;
   grid-template-columns: 100%;
 
-  @media screen and (min-width: $tablet-width) {
+  @include media-tablet {
     grid-template-columns: 1fr 1fr;
   }
 
-  @media screen and (min-width: $desktop-width) {
+  @include media-desktop {
     grid-template-columns: 1fr 1fr 1fr;
   }
 }

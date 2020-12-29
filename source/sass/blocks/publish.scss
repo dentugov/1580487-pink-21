@@ -1,6 +1,6 @@
 // Publish
 
-@media screen and (max-width: $tablet-and-mobile-width) {
+@include media-except-desktop {
   .publish__inner {
     padding-left: 0;
     padding-right: 0;
@@ -11,7 +11,7 @@
   background-color: $page-section-bg-color;
   padding: 20px 20px 40px;
 
-  @media screen and (min-width: $tablet-width) {
+  @include media-tablet {
     display: grid;
     grid-template-rows: 1fr min-content;
     grid-template-columns: 300px 1fr;
@@ -19,13 +19,13 @@
     padding: 55px 20px;
   }
 
-  @media screen and (min-width: $desktop-width) {
+  @include media-desktop {
     column-gap: 90px;
     padding: 57px 60px 57px 80px;
   }
 }
 
-@media screen and (min-width: $tablet-width) {
+@include media-tablet {
   .publish__media-preview {
     grid-row: 1 / -1;
   }
@@ -41,7 +41,7 @@
   padding: 0;
   margin: 0;
 
-  @media screen and (max-width: $mobile-width-only) {
+  @include media-mobil-only {
     border-bottom: 1px solid $publish-border-color;
     margin-bottom: 40px;
   }
@@ -51,7 +51,7 @@
   display: none;
   text-align: center;
 
-  @media screen and (max-width: $mobile-width-only) {
+  @include media-mobil-only {
     display: block;
   }
 }
@@ -60,7 +60,7 @@
   padding: 20px 0;
   margin: 0;
 
-  @media screen and (max-width: $mobile-width-only) {
+  @include media-mobil-only {
     display: none;
 
     &--active {
@@ -68,7 +68,7 @@
     }
   }
 
-  @media screen and (min-width: $tablet-width) {
+  @include media-tablet {
     border-bottom: 2px solid $basic-border-color;
     padding-left: 55px;
     padding-right: 18px;
@@ -76,11 +76,11 @@
 }
 
 .publish__submit {
-  @media screen and (min-width: $tablet-width) {
+  @include media-tablet {
     padding: 0 2px;
   }
 
-  @media screen and (min-width: $desktop-width) {
+  @include media-desktop {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -93,12 +93,12 @@
   border-color: $basic-accent-color;
   margin-bottom: 12px;
 
-  @media screen and (min-width: $tablet-width) {
+  @include media-tablet {
     margin-bottom: 24px;
     max-width: 260px;
   }
 
-  @media screen and (min-width: $desktop-width) {
+  @include media-desktop {
     margin-bottom: 0;
     max-width: 183px;
   }
@@ -108,11 +108,11 @@
   color: $cancel-button-color;
   border-color: $cancel-button-color;
 
-  @media screen and (min-width: $tablet-width) {
+  @include media-tablet {
     max-width: 260px;
   }
 
-  @media screen and (min-width: $desktop-width) {
+  @include media-desktop {
     max-width: 183px;
   }
 }

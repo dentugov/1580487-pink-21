@@ -5,12 +5,12 @@
   text-align: center;
   padding: 40px 0 30px;
 
-  @media screen and (min-width: $tablet-width) {
+  @include media-tablet {
     font-size: $font-size-4xl;
     line-height: $line-height-4xl;
   }
 
-  @media screen and (min-width: $desktop-width) {
+  @include media-desktop {
     font-size: $font-size-5xl;
     line-height: $line-height-5xl;
   }
@@ -19,7 +19,7 @@
 .features__text p {
   margin: 0;
 
-  @media screen and (max-width: $mobile-width-only) {
+  @include media-mobil-only {
     &:not(:last-child) {
       margin-bottom: 30px;
     }
@@ -36,14 +36,14 @@
   padding-top: 85px;
   padding-bottom: 325px;
 
-  @media screen and (min-width: $tablet-width) {
+  @include media-tablet {
     text-align: left;
     padding-top: 80px;
-    padding-left: 50%;
+    padding-left: 310px;
     padding-bottom: 42px;
   }
 
-  @media screen and (min-width: $desktop-width) {
+  @include media-desktop {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     column-gap: 20px;
@@ -54,7 +54,7 @@
   }
 }
 
-@media screen and (min-width: $desktop-width) {
+@include media-desktop {
   .features__benefit-item {
     padding: 0 20px;
   }
@@ -70,19 +70,19 @@
 .features__research {
   padding: 100px 0 80px;
 
-  @media screen and (max-width: $mobile-width-only) {
+  @include media-mobil-only {
     display: none;
   }
 
-  @media screen and (min-width: $desktop-width) {
+  @include media-desktop {
     background-color: $page-section-bg-color;
   }
 }
 
 .features__research-container {
-  padding-left: 50%;
+  padding-left: 310px;
 
-  @media screen and (min-width: $desktop-width) {
+  @include media-desktop {
     padding-left: 370px;
   }
 }

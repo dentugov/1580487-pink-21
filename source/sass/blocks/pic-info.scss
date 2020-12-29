@@ -6,7 +6,7 @@
   background-color: $pic-info-bg;
   padding: 20px 15px;
 
-  @media screen and (min-width: $tablet-width) {
+  @include media-tablet {
     &--panorama {
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -17,7 +17,7 @@
 .pic-info__desc {
   flex-grow: 1;
 
-  @media screen and (min-width: $tablet-width) {
+  @include media-tablet {
     &--panorama {
       grid-row: 2 / 3;
       grid-column: 1 / -1;
@@ -28,7 +28,7 @@
 .pic-info__likes {
   display: flex;
 
-  @media screen and (min-width: $tablet-width) {
+  @include media-tablet {
     justify-content: space-between;
 
     &--panorama {
@@ -36,7 +36,7 @@
     }
   }
 
-  @media screen and (min-width: $desktop-width) {
+  @include media-desktop {
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
@@ -44,7 +44,7 @@
 .pic-info__like-text {
   margin: 0;
 
-  @media screen and (min-width: $tablet-width) {
+  @include media-tablet {
     &--panorama {
       margin-right: 20px;
     }
@@ -52,7 +52,7 @@
 }
 
 .pic-info__like-button {
-  @media screen and (max-width: $mobile-width-only) {
+  @include media-mobil-only {
     order: -1;
     margin-right: 20px;
   }
