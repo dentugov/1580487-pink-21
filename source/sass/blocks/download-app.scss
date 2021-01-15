@@ -20,8 +20,12 @@
 
 .download-app__link {
   @include font-params($font-size-l, $font-weight-bold);
+  display: block;
   color: $white;
   text-decoration: none;
+  border: 3px solid $white;
+  border-radius: 30px;
+  padding: 12px 10px 13px;
 }
 
 .download-app__list-logos {

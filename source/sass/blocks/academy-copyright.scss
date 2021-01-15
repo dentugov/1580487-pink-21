@@ -1,0 +1,15 @@
+// Copyright
+
+.academy-copyright {
+  display: flex;
+  align-items: center;
+}
+
+.academy-copyright__text {
+  margin-right: 16px;
+}
+
+.academy-copyright__logo {
+  display: block;
+  color: $basic-accent-color;
+}

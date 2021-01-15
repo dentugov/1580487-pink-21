@@ -29,6 +29,23 @@
     border-right: 2px solid $basic-border-color;
   }
 
+  &--hit {
+    position: relative;
+    overflow: hidden;
+  }
+
+  &--hit::before {
+    content: "Хит";
+    position: absolute;
+    top: 12px;
+    left: -30px;
+    font-weight: $font-weight-thin;
+    text-transform: uppercase;
+    background-color: $basic-accent-color;
+    padding: 0 40px;
+    transform: rotate(-45deg);
+  }
+
   &--transparent {
     background-color: transparent;
   }
@@ -62,20 +79,61 @@
 .price-table__tariff-includes {
   border: 2px solid $basic-border-color;
   background-color: $price-table-body-bg;
+  padding: 10px 16px;
 
   @include media-desktop {
     font-size: $font-size-l;
   }
 }
 
+.price-table__includes-text {
+  margin: 0;
+}
+
 .price-table__tariff-item {
   border: 2px solid $basic-border-color;
   background-color: $price-table-body-bg;
+  padding: 15px 17px;
 
   @include media-mobil-only {
+    position: relative;
+
     &::before {
       content: attr(data-tariff);
+      position: absolute;
+      text-transform: uppercase;
+      top: 50%;
+      left: 20px;
+      transform: translateY(-50%);
     }
+  }
+
+  @include media-tablet {
+    padding-top: 9px;
+    padding-bottom: 9px;
+  }
+
+  @include media-desktop {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+}
+
+.price-table__item-icon {
+  height: 29px;
+  background-position: center right;
+  background-repeat: no-repeat;
+
+  &--yes {
+    background-image: url("../../img/icons/yes.svg");
+  }
+
+  &--no {
+    background-image: url("../../img/icons/no.svg");
+  }
+
+  @include media-tablet {
+    background-position: center;
   }
 }
 
@@ -91,4 +149,8 @@
   @include media-tablet {
     display: none;
   }
+}
+
+.price-table__bullet {
+  @include button-reset;
 }

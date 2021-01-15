@@ -49,10 +49,25 @@
 
 .publish__filters-nav {
   display: none;
-  text-align: center;
 
   @include media-mobil-only {
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 42px 20px 34px;
+  }
+}
+
+.publish__nav-button {
+  @include button-reset;
+  color: $transparent-gray;
+
+  &--active {
+    color: $basic-accent-color;
+  }
+
+  &:not(:last-child) {
+    margin-right: 35px;
   }
 }
 
@@ -69,9 +84,27 @@
   }
 
   @include media-tablet {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     border-bottom: 2px solid $basic-border-color;
-    padding-left: 55px;
     padding-right: 18px;
+  }
+}
+
+.publish__filter-icon {
+  display: none;
+  color: $basic-accent-color;
+
+  @include media-tablet {
+    display: block;
+    width: 22px;
+    height: 22px;
+  }
+
+  @include media-desktop {
+    width: 44px;
+    height: 44px;
   }
 }
 

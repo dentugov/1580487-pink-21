@@ -15,6 +15,16 @@
   }
 }
 
+.social-links__link {
+  display: flex;
+  width: 54px;
+  height: 54px;
+  border: 3px solid $socials-border-color;
+  border-radius: 50%;
+}
+
 .social-links__icon {
   display: block;
+  margin: auto;
+  color: $basic-accent-color;
 }

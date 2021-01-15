@@ -1,5 +1,33 @@
 // Logo
 
 .logo__image {
-  display: block;
+  display: none;
+
+  &--light {
+    @include media-except-desktop {
+      display: block;
+    }
+  }
+
+  &--mobil {
+    @include media-mobil-only {
+      display: block;
+    }
+  }
+
+  &--tablet {
+    @include media-tablet {
+      display: block;
+    }
+
+    @include media-desktop {
+      display: none;
+    }
+  }
+
+  &--desktop {
+    @include media-desktop {
+      display: block;
+    }
+  }
 }
