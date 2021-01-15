@@ -125,11 +125,11 @@
   background-repeat: no-repeat;
 
   &--yes {
-    background-image: url("../../img/icons/yes.svg");
+    background-image: url("../img/icons/yes.svg");
   }
 
   &--no {
-    background-image: url("../../img/icons/no.svg");
+    background-image: url("../img/icons/no.svg");
   }
 
   @include media-tablet {

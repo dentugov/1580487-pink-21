@@ -5,28 +5,28 @@
   background-repeat: no-repeat;
 
   @include media-mobil-only {
-    background-image: url("../../img/content/back-mobile.jpg");
+    background-image: url("../img/content/back-mobile.jpg");
 
     @include media-2x {
-      background-image: url("../../img/content/back-mobile@2x.jpg");
+      background-image: url("../img/content/back-mobile@2x.jpg");
       background-size: cover;
     }
   }
 
   @include media-tablet {
-    background-image: url("../../img/content/back-tablet.jpg");
+    background-image: url("../img/content/back-tablet.jpg");
 
     @include media-2x {
-      background-image: url("../../img/content/back-tablet@2x.jpg");
+      background-image: url("../img/content/back-tablet@2x.jpg");
       background-size: cover;
     }
   }
 
   @include media-desktop {
-    background-image: url("../../img/content/back-desktop.jpg");
+    background-image: url("../img/content/back-desktop.jpg");
 
     @include media-2x {
-      background-image: url("../../img/content/back-desktop@2x.jpg");
+      background-image: url("../img/content/back-desktop@2x.jpg");
       background-size: cover;
     }
   }
