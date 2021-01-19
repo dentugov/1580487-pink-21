@@ -3,23 +3,25 @@
 .features__text {
   @include font-params($font-size-2xl, $font-weight-thin, $line-height-m);
   text-align: center;
-  padding: 40px 0 30px;
+  padding: 40px 0 60px;
 
   @include media-tablet {
     font-size: $font-size-4xl;
     line-height: $line-height-4xl;
+    padding: 50px 0 90px;
   }
 
   @include media-desktop {
     font-size: $font-size-5xl;
     line-height: $line-height-5xl;
+    padding: 75px 0 150px;
   }
 }
 
 .features__text p {
   margin: 0;
 
-  @include media-mobil-only {
+  @include media-mobile-only {
     &:not(:last-child) {
       margin-bottom: 30px;
     }
@@ -29,14 +31,42 @@
 .features__benefits {
   position: relative;
   background-color: $page-section-bg-color;
-  overflow: hidden;
+  clip-path: inset(-32px 0 0);
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 32px;
+    transform: translateY(-100%);
+    clip-path: polygon(100% 0, 100% 100%, 0 100%);
+    background-color: $page-section-bg-color;
+  }
+
+  @include media-tablet {
+    clip-path: inset(-53px 0 0);
+
+    &::before {
+      height: 53px;
+    }
+  }
+
+  @include media-desktop {
+    clip-path: inset(-100px 0 0);
+
+    &::before {
+      height: 100px;
+    }
+  }
 }
 
 .features__benefits-list {
   @include list-reset;
   position: relative;
   text-align: center;
-  padding-top: 80px;
+  padding-top: 55px;
   padding-bottom: 42px;
 
   @include media-except-desktop {
@@ -46,7 +76,7 @@
     }
   }
 
-  @include media-mobil-only {
+  @include media-mobile-only {
     padding-bottom: 325px;
 
     &::before {
@@ -71,9 +101,10 @@
   @include media-tablet {
     text-align: left;
     padding-left: 310px;
+    padding-top: 28px;
 
     &::before {
-      bottom: -100px;
+      top: -47px;
       left: 0;
       width: 267px;
       height: 547px;
@@ -98,6 +129,7 @@
     line-height: $line-height-l;
     text-align: center;
     padding-left: 0;
+    padding-top: 205px;
   }
 }
 
@@ -106,7 +138,7 @@
   @include media-desktop {
     position: relative;
     padding: 0 20px;
-    padding-top: 360px;
+    padding-top: 55px;
 
     &::before {
       content: "";
@@ -115,7 +147,7 @@
       left: 50%;
       width: 186px;
       height: 301px;
-      transform: translateX(-50%);
+      transform: translate(-50%, -100%);
       background-size: cover;
       background-repeat: no-repeat;
       background-position: top center;
@@ -136,10 +168,11 @@
     &::after {
       content: "";
       position: absolute;
-      top: 287px;
+      top: 0;
       left: 0;
       width: 100%;
       height: 14px;
+      transform: translateY(-100%);
       background-image: url("../img/content/shadow.png");
       background-size: cover;
       background-repeat: no-repeat;
@@ -174,21 +207,22 @@
 }
 
 .features__research {
-  padding: 100px 0 80px;
+  padding: 50px 0 60px;
 
-  @include media-mobil-only {
+  @include media-mobile-only {
     display: none;
   }
 
   @include media-desktop {
     background-color: $page-section-bg-color;
-    padding: 137px 0 150px;
+    padding: 20px 0 65px;
   }
 }
 
 .features__research-container {
   position: relative;
-  padding-left: 310px;
+  padding: 40px 10px 10px 310px;
+  min-height: 276px;
 
   &::before {
     content: "";
@@ -205,7 +239,9 @@
   }
 
   @include media-desktop {
+    padding: 90px 10px 30px 370px;
     padding-left: 370px;
+    min-height: 345px;
 
     &::before {
       width: 298px;

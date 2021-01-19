@@ -12,4 +12,12 @@
 .academy-copyright__logo {
   display: block;
   color: $basic-accent-color;
+
+  &:hover {
+    color: $basic-text-color;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }

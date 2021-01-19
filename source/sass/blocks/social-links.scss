@@ -19,12 +19,21 @@
   display: flex;
   width: 54px;
   height: 54px;
-  border: 3px solid $socials-border-color;
+  border: 3px solid rgba($basic-text-color, 0.1);
   border-radius: 50%;
+  color: $basic-accent-color;
+
+  &:hover {
+    border-color: $basic-text-color;
+  }
+
+  &:active {
+    border-color: rgba($basic-text-color, 0.1);
+    color: rgba($basic-accent-color, 0.3);
+  }
 }
 
 .social-links__icon {
   display: block;
   margin: auto;
-  color: $basic-accent-color;
 }

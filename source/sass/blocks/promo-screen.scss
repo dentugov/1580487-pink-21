@@ -9,7 +9,7 @@
   display: grid;
   grid-template-columns: 100%;
 
-  @include media-mobil-only {
+  @include media-mobile-only {
     padding-left: 0;
     padding-right: 0;
   }

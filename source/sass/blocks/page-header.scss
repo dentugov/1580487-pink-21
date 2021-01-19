@@ -4,7 +4,7 @@
   background-position: top center;
   background-repeat: no-repeat;
 
-  @include media-mobil-only {
+  @include media-mobile-only {
     background-image: url("../img/content/back-mobile.jpg");
 
     @include media-2x {

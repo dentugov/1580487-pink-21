@@ -1,33 +1,90 @@
 // Logo
 
+.logo {
+  display: block;
+  position: relative;
+  width: 74px;
+  height: 23px;
+  overflow: hidden;
+
+  &--footer {
+    @include media-mobile-only {
+      width: 145px;
+      height: 40px;
+    }
+  }
+
+  @include media-tablet {
+    width: 145px;
+    height: 40px;
+  }
+
+  @include media-desktop {
+    width: 147px;
+    height: 40px;
+  }
+}
+
 .logo__image {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 147px;
+  height: 40px;
+
+  &:hover {
+    color: $basic-accent-color;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &--header {
+    color: $white;
+  }
+
+  &--header:active {
+    color: $white;
+  }
+
+  &--footer {
+    color: $basic-text-color;
+  }
+
+  &--footer:active {
+    color: $basic-text-color;
+  }
+}
+
+.logo__stars {
+  color: $basic-accent-color;
+}
+
+.logo__part-glasses {
   display: none;
 
-  &--light {
-    @include media-except-desktop {
-      display: block;
-    }
+  &--footer {
+    color: $basic-accent-color;
   }
 
-  &--mobil {
-    @include media-mobil-only {
-      display: block;
-    }
+  @include media-except-desktop {
+    display: block;
   }
+}
 
-  &--tablet {
-    @include media-tablet {
-      display: block;
-    }
+.logo__part-desktop {
+  display: none;
 
-    @include media-desktop {
-      display: none;
-    }
+  @include media-desktop {
+    display: block;
   }
+}
 
-  &--desktop {
-    @include media-desktop {
-      display: block;
-    }
-  }
+.logo__glasses-desktop--footer {
+  color: $basic-accent-color;
+}
+
+.logo__stars--footer {
+  color: $basic-text-color;
 }

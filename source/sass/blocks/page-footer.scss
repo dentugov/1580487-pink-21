@@ -11,6 +11,18 @@
   }
 }
 
+.page-footer__logo {
+  @include media-mobile-only {
+    margin-bottom: 38px;
+  }
+}
+
+.page-footer__socials {
+  @include media-mobile-only {
+    margin-bottom: 38px;
+  }
+}
+
 .page-footer__copyright {
   margin: 0;
 }

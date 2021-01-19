@@ -11,4 +11,13 @@
   &::placeholder {
     color: $basic-text-color;
   }
+
+  &:hover {
+    border-color: $basic-text-color;
+  }
+
+  &:focus {
+    outline: none;
+    border-color: $basic-accent-color;
+  }
 }

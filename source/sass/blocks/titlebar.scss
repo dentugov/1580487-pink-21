@@ -9,4 +9,9 @@
   text-align: center;
   padding: 35px 0 50px;
   margin: 0;
+
+  @include media-tablet {
+    font-size: $font-size-5xl;
+    line-height: $line-height-5xl;
+  }
 }

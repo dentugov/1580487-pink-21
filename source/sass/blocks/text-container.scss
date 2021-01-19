@@ -4,6 +4,10 @@
   line-height: 30px;
   text-align: center;
   padding: 50px 0;
+
+  @include media-tablet {
+    font-size: $font-size-l;
+  }
 }
 
 .text-container__inner {

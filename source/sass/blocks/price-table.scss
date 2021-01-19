@@ -1,8 +1,10 @@
 // Price Table
 
 .price-table {
+  position: relative;
   padding: 100px 0 50px;
   background-color: $page-section-bg-color;
+  clip-path: polygon(0 20px, 100% 0, 100% 100%, 0 100%);
   overflow: hidden;
 }
 
@@ -11,10 +13,11 @@
   border-collapse: collapse;
   width: 100%;
 
-  @include media-mobil-only {
+  @include media-mobile-only {
     left: 50%;
     width: calc(100% * 3);
     transform: translateX(-50%);
+    margin-bottom: 43px;
   }
 }
 
@@ -50,7 +53,7 @@
     background-color: transparent;
   }
 
-  @include media-mobil-only {
+  @include media-mobile-only {
     width: calc(100% / 3);
     padding: 20px 0 30px;
   }
@@ -77,6 +80,7 @@
 }
 
 .price-table__tariff-includes {
+  font-weight: $font-weight-normal;
   border: 2px solid $basic-border-color;
   background-color: $price-table-body-bg;
   padding: 10px 16px;
@@ -95,7 +99,7 @@
   background-color: $price-table-body-bg;
   padding: 15px 17px;
 
-  @include media-mobil-only {
+  @include media-mobile-only {
     position: relative;
 
     &::before {
@@ -121,6 +125,7 @@
 
 .price-table__item-icon {
   height: 29px;
+  margin: 0;
   background-position: center right;
   background-repeat: no-repeat;
 
@@ -137,14 +142,17 @@
   }
 }
 
-@include media-mobil-only {
-  .price-table__no-mobil {
+@include media-mobile-only {
+  .price-table__no-mobile {
     display: none;
   }
 }
 
 .price-table__pagination {
-  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 
   @include media-tablet {
     display: none;
