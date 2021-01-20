@@ -42,6 +42,7 @@
     border-radius: 1px;
     background-color: $white;
     box-shadow: 0 10px 0 0 $white, 0 20px 0 0 $white;
+    transition: all 0.25s;
   }
 
   &:hover::before {
@@ -105,12 +106,13 @@
   text-transform: uppercase;
   text-decoration: none;
   padding: 19px 20px;
+  transition: color 0.25s;
 
-  &:hover {
+  &[href]:hover {
     color: $basic-accent-color;
   }
 
-  &:active {
+  &[href]:active {
     opacity: 0.3;
   }
 
@@ -173,6 +175,7 @@
         translateY(-50%)
         rotate(-45deg);
       background-color: $white;
+      transition: all 0.25s;
     }
 
     &:hover::after {

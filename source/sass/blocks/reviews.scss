@@ -106,6 +106,7 @@
   top: 0;
   color: rgba($basic-text-color, 0.3);
   background-color: transparent;
+  transition: color 0.25s;
 
   &:hover {
     color: rgba($basic-text-color, 0.6);

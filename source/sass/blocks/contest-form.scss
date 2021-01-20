@@ -269,6 +269,7 @@
   background-color: $white;
   border: 2px solid $basic-border-color;
   border-radius: 2px;
+  transition: border-color 0.25s;
 }
 
 .contest-form__checkbox-input:hover + .contest-form__option-label::before,
@@ -304,6 +305,7 @@
   background-color: $white;
   border: 2px solid $basic-border-color;
   border-radius: 50%;
+  transition: border-color 0.25s;
 }
 
 .contest-form__radio-input:hover + .contest-form__option-label::before,

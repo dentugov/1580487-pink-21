@@ -71,8 +71,9 @@
 .contacts__link {
   color: $basic-link-color;
   text-decoration: none;
+  transition: color 0.25s;
 
-  &:hover {
+  &[href]:hover {
     color: $basic-text-color;
     text-decoration: underline;
   }

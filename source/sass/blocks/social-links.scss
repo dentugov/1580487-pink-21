@@ -22,12 +22,13 @@
   border: 3px solid rgba($basic-text-color, 0.1);
   border-radius: 50%;
   color: $basic-accent-color;
+  transition: all 0.25s;
 
-  &:hover {
+  &[href]:hover {
     border-color: $basic-text-color;
   }
 
-  &:active {
+  &[href]:active {
     border-color: rgba($basic-text-color, 0.1);
     color: rgba($basic-accent-color, 0.3);
   }

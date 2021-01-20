@@ -61,6 +61,7 @@
 .publish__nav-button {
   @include button-reset;
   color: rgba($basic-text-color, 0.3);
+  transition: color 0.25s;
 
   &:hover {
     color: rgba($basic-text-color, 0.5);
@@ -194,6 +195,7 @@
   color: $basic-accent-color;
   border-color: $basic-accent-color;
   margin-bottom: 12px;
+  transition: all 0.25s;
 
   &:hover {
     background-color: $basic-accent-color;
@@ -218,6 +220,7 @@
 .publish__cancel-button {
   color: $cancel-button-color;
   border-color: $cancel-button-color;
+  transition: all 0.25s;
 
   &:hover {
     color: $transparent-gray;

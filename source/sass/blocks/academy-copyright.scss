@@ -9,15 +9,19 @@
   margin-right: 16px;
 }
 
-.academy-copyright__logo {
-  display: block;
+.academy-copyright__link {
   color: $basic-accent-color;
+  transition: color 0.25s;
 
-  &:hover {
+  &[href]:hover {
     color: $basic-text-color;
   }
 
-  &:active {
+  &[href]:active {
     opacity: 0.3;
   }
+}
+
+.academy-copyright__logo {
+  display: block;
 }

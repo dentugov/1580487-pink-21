@@ -6,12 +6,35 @@
   width: 74px;
   height: 23px;
   overflow: hidden;
+  transition: all 0.25s;
+
+  &[href]:hover {
+    color: $basic-accent-color;
+  }
+
+  &[href]:active {
+    opacity: 0.3;
+  }
+
+  &--header {
+    color: $white;
+  }
+
+  &--header[href]:active {
+    color: $white;
+  }
 
   &--footer {
+    color: $basic-text-color;
+
     @include media-mobile-only {
       width: 145px;
       height: 40px;
     }
+  }
+
+  &--footer[href]:active {
+    color: $basic-text-color;
   }
 
   @include media-tablet {
@@ -31,30 +54,6 @@
   bottom: 0;
   width: 147px;
   height: 40px;
-
-  &:hover {
-    color: $basic-accent-color;
-  }
-
-  &:active {
-    opacity: 0.3;
-  }
-
-  &--header {
-    color: $white;
-  }
-
-  &--header:active {
-    color: $white;
-  }
-
-  &--footer {
-    color: $basic-text-color;
-  }
-
-  &--footer:active {
-    color: $basic-text-color;
-  }
 }
 
 .logo__stars {

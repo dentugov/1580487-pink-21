@@ -9,6 +9,7 @@
   padding: 20px;
   border-radius: 3px;
   cursor: pointer;
+  transition: background-color 0.25s;
 
   &:hover {
     background-color: $hover-button-color;

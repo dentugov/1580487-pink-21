@@ -29,14 +29,16 @@
   padding: 12px 10px 13px;
   margin: auto;
   margin-bottom: 32px;
+  transition: all 0.25s;
 
-  &:hover {
+  &[href]:hover {
     background-color: $white;
     color: $basic-accent-color;
+    box-shadow: 0 5px 7px 0 rgba($black, 0.75);
   }
 
-  &:active {
-    color: $transparent-accent;
+  &[href]:active {
+    color: rgba($basic-accent-color, 0.3);
   }
 }
 
