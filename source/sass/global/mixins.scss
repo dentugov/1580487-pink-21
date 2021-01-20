@@ -17,6 +17,8 @@
   font-size: inherit;
   border: none;
   margin: 0;
+  padding: 0;
+  cursor: pointer;
 }
 
 @mixin visually-hidden {
@@ -32,7 +34,7 @@
   overflow: hidden;
 }
 
-@mixin media-mobil-only {
+@mixin media-mobile-only {
   @media screen and (max-width: $mobile-width-only) {
     @content;
   }
@@ -52,6 +54,12 @@
 
 @mixin media-desktop {
   @media screen and (min-width: $desktop-width) {
+    @content;
+  }
+}
+
+@mixin media-2x {
+  @media screen and (min-resolution: 2dppx) {
     @content;
   }
 }

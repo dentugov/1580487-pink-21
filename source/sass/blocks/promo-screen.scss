@@ -2,7 +2,6 @@
 
 .promo-screen {
   color: $white;
-  background-color: $promo-screen-bg;
   padding-top: 25px;
 }
 
@@ -10,7 +9,7 @@
   display: grid;
   grid-template-columns: 100%;
 
-  @include media-mobil-only {
+  @include media-mobile-only {
     padding-left: 0;
     padding-right: 0;
   }
@@ -37,21 +36,12 @@
 
 .promo-screen__image {
   display: block;
-
-  @include media-tablet {
-    width: 620px;
-    height: 545px;
-  }
-
-  @include media-desktop {
-    width: 620px;
-    height: 645px;
-  }
 }
 
 .promo-screen__text {
   @include font-params($font-size-2xl, $font-weight-thin, $line-height-m);
   text-align: center;
+  padding: 0 20px;
   margin: 0;
   margin-bottom: 30px;
 

@@ -11,7 +11,7 @@
 }
 
 
-@include media-mobil-only {
+@include media-mobile-only {
   .download-app__inner {
     padding-left: 20px;
     padding-right: 20px;
@@ -20,8 +20,26 @@
 
 .download-app__link {
   @include font-params($font-size-l, $font-weight-bold);
+  display: block;
   color: $white;
   text-decoration: none;
+  max-width: 300px;
+  border: 3px solid $white;
+  border-radius: 30px;
+  padding: 12px 10px 13px;
+  margin: auto;
+  margin-bottom: 32px;
+  transition: all 0.25s;
+
+  &[href]:hover {
+    background-color: $white;
+    color: $basic-accent-color;
+    box-shadow: 0 5px 7px 0 rgba($black, 0.75);
+  }
+
+  &[href]:active {
+    color: rgba($basic-accent-color, 0.3);
+  }
 }
 
 .download-app__list-logos {

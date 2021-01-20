@@ -7,8 +7,18 @@
   border-radius: 2px;
   padding: 16px 20px;
   height: 59px;
+  transition: border-color 0.25s;
 
   &::placeholder {
     color: $basic-text-color;
+  }
+
+  &:hover {
+    border-color: $basic-text-color;
+  }
+
+  &:focus {
+    outline: none;
+    border-color: $basic-accent-color;
   }
 }

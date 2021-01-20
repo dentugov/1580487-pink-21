@@ -1,0 +1,27 @@
+// Copyright
+
+.academy-copyright {
+  display: flex;
+  align-items: center;
+}
+
+.academy-copyright__text {
+  margin-right: 16px;
+}
+
+.academy-copyright__link {
+  color: $basic-accent-color;
+  transition: color 0.25s;
+
+  &[href]:hover {
+    color: $basic-text-color;
+  }
+
+  &[href]:active {
+    opacity: 0.3;
+  }
+}
+
+.academy-copyright__logo {
+  display: block;
+}

@@ -4,6 +4,12 @@
   padding: 50px 0 40px;
 }
 
+.reviews__inner {
+  @include media-desktop {
+    position: relative;
+  }
+}
+
 .reviews__list {
   @include list-reset;
 }
@@ -22,6 +28,42 @@
   line-height: $line-height-l;
   text-align: center;
   margin: 0;
+  margin-bottom: 40px;
+
+  @include media-desktop {
+    position: relative;
+    padding: 100px 125px 0 125px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 50%;
+      width: 79px;
+      height: 63px;
+      transform: translateX(-50%);
+      background-image: url("../img/icons/quotes.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+}
+
+.reviews__user-blockquote p {
+  margin: 0;
+  margin-bottom: 20px;
+
+  @include media-mobile-only {
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+
+  @include media-tablet {
+    &:last-of-type {
+      margin-bottom: 40px;
+    }
+  }
 }
 
 .reviews__blockquote-caption {
@@ -30,8 +72,9 @@
   align-items: center;
   font-style: normal;
 
-  @include media-mobil-only {
+  @include media-mobile-only {
     order: -1;
+    margin-bottom: 20px;
   }
 }
 
@@ -41,23 +84,62 @@
 }
 
 .reviews__author-meta {
-  @include media-mobil-only {
+  @include media-mobile-only {
     display: none;
   }
 }
 
 .reviews__navigation {
   position: absolute;
+  left: 0;
+  right: 0;
+  top: 60%;
 
   @include media-except-desktop {
     display: none;
   }
 }
 
+.reviews__nav-button {
+  @include button-reset;
+  position: absolute;
+  top: 0;
+  color: rgba($basic-text-color, 0.3);
+  background-color: transparent;
+  transition: color 0.25s;
+
+  &:hover {
+    color: rgba($basic-text-color, 0.6);
+  }
+
+  &:active {
+    color: rgba($basic-text-color, 0.1);
+  }
+
+  &--prev {
+    left: 10px;
+  }
+
+  &--next {
+    right: 10px;
+  }
+}
+
+.reviews__nav-icon {
+  display: block;
+}
+
 .reviews__pagination {
-  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 
   @include media-desktop {
     display: none;
   }
+}
+
+.reviews__bullet {
+  @include button-reset;
 }

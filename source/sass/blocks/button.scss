@@ -9,4 +9,19 @@
   padding: 20px;
   border-radius: 3px;
   cursor: pointer;
+  transition: background-color 0.25s;
+
+  &:hover {
+    background-color: $hover-button-color;
+  }
+
+  &:active {
+    color: rgba($white, 0.3);
+    background-color: $hover-button-color;
+  }
+
+  &:disabled {
+    background-color: $disabled-button-color;
+    cursor: default;
+  }
 }
