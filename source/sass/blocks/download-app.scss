@@ -3,10 +3,15 @@
 .download-app {
   text-align: center;
   background-color: $download-app-bg;
-  padding: 28px 0 35px;
+  padding: 28px 0 31px;
 
   @include media-tablet {
     background-color: transparent;
+    padding: 0;
+  }
+
+  @include media-desktop {
+    margin-left: -7px; /* Привет PP */
   }
 }
 
@@ -40,16 +45,35 @@
   &[href]:active {
     color: rgba($basic-accent-color, 0.3);
   }
+
+  @include media-tablet {
+    margin-bottom: 46px;
+  }
+
+  @include media-desktop {
+    font-size: 21px;
+    padding: 13px 10px;
+    margin-bottom: 67px;
+  }
 }
 
 .download-app__list-logos {
   @include list-reset;
   display: flex;
   justify-content: center;
+  margin-bottom: 14px;
+
+  @include media-tablet {
+    margin-bottom: 25px;
+  }
+
+  @include media-desktop {
+    margin-bottom: 46px;
+  }
 }
 
 .download-app__item-logo {
-  margin: 0 17px;
+  margin: 0 15px;
 }
 
 .download-app__desc {

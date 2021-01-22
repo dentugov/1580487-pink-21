@@ -3,10 +3,22 @@
 .text-container {
   line-height: 30px;
   text-align: center;
-  padding: 50px 0;
+  padding: 44px 0 38px;
 
   @include media-tablet {
     font-size: $font-size-l;
+    padding: 91px 0 72px;
+
+    &--catalog-pp {
+      padding-top: 64px;
+    }
+  }
+
+  @include media-desktop {
+    &--catalog-pp {
+      padding-top: 58px;
+      padding-bottom: 67px;
+    }
   }
 }
 
@@ -16,4 +28,10 @@
 
 .text-container p {
   margin: 0;
+}
+
+.text-container__mobile-hidden {
+  @include media-mobile-only {
+    display: none;
+  }
 }

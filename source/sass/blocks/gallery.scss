@@ -11,12 +11,21 @@
 
   @include media-desktop {
     grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 54px;
   }
 }
 
 .gallery__item {
   display: flex;
   flex-direction: column;
+
+  @include media-tablet {
+    min-height: 455px;
+  }
+
+  @include media-desktop {
+    min-height: 555px;
+  }
 }
 
 .gallery__info {

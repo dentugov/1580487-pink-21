@@ -2,12 +2,23 @@
 
 .titlebar {
   color: $white;
+  padding: 28px 0 44px;
+  min-height: 171px;
+
+  @include media-tablet {
+    padding: 67px 0 59px;
+    min-height: 330px;
+  }
+
+  @include media-desktop {
+    padding: 59px 0 89px;
+    min-height: auto;
+  }
 }
 
 .titlebar__header {
   @include font-params($font-size-2xl, $font-weight-thin, $line-height-xl);
   text-align: center;
-  padding: 35px 0 50px;
   margin: 0;
 
   @include media-tablet {

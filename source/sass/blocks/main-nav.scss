@@ -17,7 +17,7 @@
   @include media-desktop {
     display: flex;
     justify-content: space-between;
-    padding: 27px 20px 43px;
+    padding: 27px 10px 43px;
   }
 }
 
@@ -68,7 +68,7 @@
   }
 
   @include media-mobile-only {
-    padding: 22px 20px;
+    padding: 21px 20px;
   }
 }
 

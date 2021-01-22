@@ -13,4 +13,12 @@
 
 .page__footer {
   padding: 40px 0;
+
+  @include media-tablet {
+    padding: 36px 0 37px;
+  }
+
+  @include media-desktop {
+    padding: 70px 0;
+  }
 }

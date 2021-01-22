@@ -1,7 +1,17 @@
 // Publish
 
-@include media-except-desktop {
-  .publish__inner {
+.publish {
+  @include media-mobile-only {
+    padding-top: 3px;
+  }
+
+  @include media-desktop {
+    padding-bottom: 28px;
+  }
+}
+
+.publish__inner {
+  @include media-except-desktop {
     padding-left: 0;
     padding-right: 0;
   }
@@ -9,14 +19,14 @@
 
 .publish__form {
   background-color: $page-section-bg-color;
-  padding: 20px 20px 40px;
+  padding: 20px 20px 41px;
 
   @include media-tablet {
     display: grid;
     grid-template-rows: 1fr min-content;
     grid-template-columns: 300px 1fr;
     column-gap: 45px;
-    padding: 55px 20px;
+    padding: 55px 20px 54px;
   }
 
   @include media-desktop {
@@ -25,8 +35,13 @@
   }
 }
 
-@include media-tablet {
-  .publish__media-preview {
+
+.publish__media-preview {
+  @include media-mobile-only {
+    margin-bottom: 40px;
+  }
+
+  @include media-tablet {
     grid-row: 1 / -1;
   }
 }
@@ -42,8 +57,18 @@
   margin: 0;
 
   @include media-mobile-only {
-    border-bottom: 1px solid $publish-border-color;
-    margin-bottom: 40px;
+    position: relative;
+    margin-bottom: 38px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: -20px;
+      bottom: 0;
+      width: calc(100% + 40px);
+      height: 1px;
+      background-color: rgba($basic-text-color, 0.1);
+    }
   }
 }
 
@@ -54,7 +79,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 42px 20px 34px;
+    padding: 0 20px;
   }
 }
 
@@ -85,7 +110,7 @@
 }
 
 .publish__filter-range {
-  padding: 20px 0;
+  padding: 22px 20px 28px;
   margin: 0;
 
   @include media-mobile-only {
@@ -101,7 +126,13 @@
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid $basic-border-color;
-    padding-right: 18px;
+    padding: 8px 18px 23px 2px;
+    margin-bottom: 16px;
+  }
+
+  @include media-desktop {
+    padding: 0 30px 10px 0;
+    margin-bottom: 16px;
   }
 }
 
@@ -111,17 +142,29 @@
 
   @include media-tablet {
     display: block;
+    flex-shrink: 0;
     margin-right: 28px;
   }
 
   @include media-desktop {
-    width: 48px;
-    height: 48px;
+    width: 50px;
+    height: 50px;
+    margin-top: -5px;
+    margin-left: -3px;
+    margin-right: 44px;
   }
 }
 
 .publish__control-wrap {
   width: 100%;
+
+  @include media-tablet {
+    margin-top: -8px;
+  }
+
+  @include media-desktop {
+    margin-top: -13px;
+  }
 }
 
 .publish__control {

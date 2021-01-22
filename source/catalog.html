@@ -110,7 +110,7 @@
 
     <div class="text-container">
       <div class="text-container__inner inner">
-        <p>Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
+        <p>Взгляните на фотографии, которые выкладывают <br class="typography-pp typography-pp--tablet-only">пользователи! <br class="typography-pp typography-pp--mobile-only typography-pp--desktop-only">Видите, как не хватает ваших?</p>
       </div>
     </div>
 
@@ -136,11 +136,9 @@
               <span class="pic-info__author">Анна</span>
               <time class="pic-info__date" datetime="2020-11-25">(5 минут назад)</time>
             </div>
-            <div class="pic-info__desc pic-info__desc--panorama">
-              <p>Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
-            </div>
+            <p class="pic-info__desc pic-info__desc--panorama">Прыгать или нет? Напишите в комментарии свой совет и <br class="typography-pp typography-pp--mobile-only">смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
             <div class="pic-info__likes pic-info__likes--panorama">
-              <p class="pic-info__like-text pic-info__like-text--panorama">Нравится: <span class="pic-info__like-count">356</span></p>
+              <p class="pic-info__like-text pic-info__like-text--panorama">Нравится: <span class="pic-info__like-count">215</span></p>
               <button class="pic-info__like-button" type="button">
                 <svg class="pic-info__like-icon" width="13" height="12">
                   <use xlink:href="./img/icons/set.svg#like"></use>
@@ -331,9 +329,9 @@
       </div>
     </section>
 
-    <div class="text-container">
+    <div class="text-container text-container--catalog-pp">
       <div class="text-container__inner inner">
-        <p>Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
+        <p>Затмите их всех! <br>Выкладывайте все, что накопилось в телефоне!</p>
       </div>
     </div>
 
@@ -383,7 +381,7 @@
                 </svg>
                 <div class="publish__control-wrap">
                   <label class="visually-hidden" for="crop">Настройка кадрирования</label>
-                  <input class="publish__control" id="crop" type="range" name="crop" min="0" max="100">
+                  <input class="publish__control" id="crop" type="range" name="crop" min="0" max="100" value="78">
                 </div>
               </div>
               <div class="publish__filter-range">
@@ -392,7 +390,7 @@
                 </svg>
                 <div class="publish__control-wrap">
                   <label class="visually-hidden" for="filling">Настройка заливки</label>
-                  <input class="publish__control" id="filling" type="range" name="filling" min="0" max="100">
+                  <input class="publish__control" id="filling" type="range" name="filling" min="0" max="100" value="14">
                 </div>
               </div>
               <div class="publish__filter-range">
@@ -401,7 +399,7 @@
                 </svg>
                 <div class="publish__control-wrap">
                   <label class="visually-hidden" for="contrast">Настройка контраста</label>
-                  <input class="publish__control" id="contrast" type="range" name="contrast" min="0" max="100">
+                  <input class="publish__control" id="contrast" type="range" name="contrast" min="0" max="100" value="50">
                 </div>
               </div>
             </div>
@@ -448,7 +446,7 @@
         </li>
         <li class="social-links__item">
           <a class="social-links__link" href="https://www.youtube.com/" target="_blank">
-            <svg class="social-links__icon" width="15" height="13">
+            <svg class="social-links__icon" width="20" height="13">
               <use xlink:href="./img/icons/set.svg#youtube"></use>
             </svg>
             <span class="visually-hidden">Ютуб</span>
