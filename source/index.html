@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Пинк</title>
-  <link href="css/style.css" rel="stylesheet">
+  <link href="css/style.min.css" rel="stylesheet">
 </head>
 
 <body class="page__body">
@@ -109,8 +109,12 @@
 
         <div class="promo-screen__image-box">
           <picture>
-            <source media="(min-width: 960px)" srcset="./img/content/hand-phone-desktop.png 1x, img/content/hand-phone-desktop@2x.png 2x">
-            <source media="(min-width: 660px)" srcset="./img/content/hand-phone-tablet.png 1x, img/content/hand-phone-tablet@2x.png 2x">
+            <source type="image/webp" media="(min-width: 960px)" srcset="./img/content/hand-phone-desktop.webp 1x, ./img/content/hand-phone-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 660px)" srcset="./img/content/hand-phone-tablet.webp 1x, ./img/content/hand-phone-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="./img/content/hand-phone.webp 1x, ./img/content/hand-phone@2x.webp 2x">
+
+            <source media="(min-width: 960px)" srcset="./img/content/hand-phone-desktop.png 1x, ./img/content/hand-phone-desktop@2x.png 2x">
+            <source media="(min-width: 660px)" srcset="./img/content/hand-phone-tablet.png 1x, ./img/content/hand-phone-tablet@2x.png 2x">
             <img class="promo-screen__image" src="./img/content/hand-phone.png" srcset="./img/content/hand-phone@2x.png 2x" alt="Пример фотографии с фильтром «Pink»">
           </picture>
         </div>
@@ -409,7 +413,7 @@
     </div>
   </footer>
 
-  <script src="js/scripts.js"></script>
+  <script src="js/scripts.min.js"></script>
 
 </body>
 </html>
