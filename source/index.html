@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Пинк</title>
-  <link href="css/style.css" rel="stylesheet">
+  <link href="css/style.min.css" rel="stylesheet">
 </head>
 
 <body class="page__body">
@@ -100,6 +100,10 @@
 
     <h1 class="visually-hidden">Сайт приложения для публикации и обмена фотографиями Pink</h1>
 
+  </header>
+
+  <main class="page__content">
+
     <section class="promo-screen">
       <div class="promo-screen__inner inner">
 
@@ -109,8 +113,12 @@
 
         <div class="promo-screen__image-box">
           <picture>
-            <source media="(min-width: 960px)" srcset="./img/content/hand-phone-desktop.png 1x, img/content/hand-phone-desktop@2x.png 2x">
-            <source media="(min-width: 660px)" srcset="./img/content/hand-phone-tablet.png 1x, img/content/hand-phone-tablet@2x.png 2x">
+            <source type="image/webp" media="(min-width: 960px)" srcset="./img/content/hand-phone-desktop.webp 1x, ./img/content/hand-phone-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 660px)" srcset="./img/content/hand-phone-tablet.webp 1x, ./img/content/hand-phone-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="./img/content/hand-phone.webp 1x, ./img/content/hand-phone@2x.webp 2x">
+
+            <source media="(min-width: 960px)" srcset="./img/content/hand-phone-desktop.png 1x, ./img/content/hand-phone-desktop@2x.png 2x">
+            <source media="(min-width: 660px)" srcset="./img/content/hand-phone-tablet.png 1x, ./img/content/hand-phone-tablet@2x.png 2x">
             <img class="promo-screen__image" src="./img/content/hand-phone.png" srcset="./img/content/hand-phone@2x.png 2x" alt="Пример фотографии с фильтром «Pink»">
           </picture>
         </div>
@@ -145,10 +153,6 @@
       </div>
     </section>
 
-  </header>
-
-  <main class="page__content">
-
     <section class="features">
 
       <h2 class="visually-hidden">Описание приложения</h2>
@@ -165,15 +169,15 @@
           <ul class="features__benefits-list">
             <li class="features__benefit-item features__benefit-item--mood">
               <h3 class="features__benefit-title">Поднимает настроение</h3>
-              <p>Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+              <p>Приложение позволит вам победить осеннюю хандру и&nbsp;депрессию буквально в несколько кликов!</p>
             </li>
             <li class="features__benefit-item features__benefit-item--change">
               <h3 class="features__benefit-title">Меняет мир вокруг</h3>
-              <p>Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+              <p>Сделайте снимок и&nbsp;<br class="typography-pp typography-pp--desktop-only">украсьте его смайликом или&nbsp;текстовой подписью, чтобы&nbsp;<br class="typography-pp typography-pp--tablet-only">усилить эффект</p>
             </li>
             <li class="features__benefit-item features__benefit-item--friends">
-              <h3 class="features__benefit-title">Заводит новых друзей</h3>
-              <p>Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+              <h3 class="features__benefit-title">Заводит новых&nbsp;друзей</h3>
+              <p>Ставьте лайки, комментируйте, делитесь фотографиями с друзьями&nbsp;<br class="typography-pp typography-pp--desktop-only">и заводите новых</p>
             </li>
           </ul>
         </div>
@@ -182,8 +186,8 @@
       <div class="features__research">
         <div class="features__inner inner">
           <div class="features__research-container">
-            <h3 class="features__research-title">Эффект <br>на 24 часа!</h3>
-            <p>Британские ученые провели исследования и&nbsp;доказали, что положительный эффект от&nbsp;использования приложения длится целые сутки!</p>
+            <h3 class="features__research-title">Эффект&nbsp;<br class="typography-pp typography-pp--tablet-only">на 24 часа!</h3>
+            <p class="features__research-text">Британские ученые провели исследования и&nbsp;доказали,&nbsp;<br class="typography-pp typography-pp--desktop-only">что положительный эффект от&nbsp;использования приложения длится целые сутки!</p>
             <a class="features__research-link" href="#">Узнать больше об исследовании</a>
           </div>
         </div>
@@ -388,7 +392,7 @@
         </li>
         <li class="social-links__item">
           <a class="social-links__link" href="https://www.youtube.com/" target="_blank">
-            <svg class="social-links__icon" width="15" height="13">
+            <svg class="social-links__icon" width="20" height="13">
               <use xlink:href="./img/icons/set.svg#youtube"></use>
             </svg>
             <span class="visually-hidden">Ютуб</span>
@@ -397,8 +401,8 @@
       </ul>
 
       <p class="page-footer__copyright academy-copyright">
-        <span class="academy-copyright__text">Разработано</span>
         <a class="academy-copyright__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
+          <span class="academy-copyright__text">Разработано</span>
           <svg class="academy-copyright__logo" width="27" height="34">
             <use xlink:href="./img/icons/set.svg#htmlacademy"></use>
           </svg>
@@ -409,7 +413,7 @@
     </div>
   </footer>
 
-  <script src="js/scripts.js"></script>
+  <script src="js/scripts.min.js"></script>
 
 </body>
 </html>

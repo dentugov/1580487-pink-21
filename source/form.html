@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Пинк</title>
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
   </head>
 
 <body class="page__body">
@@ -98,19 +98,19 @@
       </div>
     </nav>
 
+  </header>
+
+  <main class="page__content">
+
     <div class="titlebar">
       <div class="titlebar__inner inner">
         <h1 class="titlebar__header">Конкурс на самое безбашенное путешествие с Пинк</h1>
       </div>
     </div>
 
-  </header>
-
-  <main class="page__content">
-
     <div class="text-container">
       <div class="text-container__inner inner">
-        <p>Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
+        <p>Поделитесь своей историей и получите шанс выиграть&nbsp;<br class="typography-pp typography-pp--tablet-only">ценный приз — 1000 миль на <br class="typography-pp typography-pp--desktop-only">вашу бонусную карту! <span class="text-container__mobile-hidden"><br class="typography-pp typography-pp--tablet-only">Пожалуйста, заполните форму ниже:</span></p>
       </div>
     </div>
 
@@ -122,7 +122,7 @@
         <form class="contest-form__container" action="https://echo.htmlacademy.ru" method="GET">
 
           <div class="contest-form__fieldset-wrap contest-form__fieldset-wrap--name">
-            <fieldset class="contest-form__fieldset contest-form__fieldset--noborder">
+            <fieldset class="contest-form__fieldset contest-form__fieldset--name">
               <legend class="visually-hidden">Как вас зовут?</legend>
               <div class="contest-form__field-bond">
                 <label class="contest-form__label" for="your-surname">Фамилия:</label>
@@ -140,7 +140,7 @@
           </div>
 
           <div class="contest-form__fieldset-wrap contest-form__fieldset-wrap--triumph">
-            <fieldset class="contest-form__fieldset">
+            <fieldset class="contest-form__fieldset contest-form__fieldset--triumph">
               <legend class="contest-form__caption">Ваши безбашенные достижения в путешествии</legend>
               <ul class="contest-form__list  contest-form__list--triumph">
                 <li class="contest-form__item">
@@ -190,35 +190,35 @@
           </div>
 
           <div class="contest-form__fieldset-wrap contest-form__fieldset-wrap--platform">
-            <fieldset class="contest-form__fieldset">
-              <legend class="contest-form__caption contest-form__caption--no-desktop">С каким приложением путешествовали?</legend>
+            <fieldset class="contest-form__fieldset contest-form__fieldset--platform">
+              <legend class="contest-form__caption contest-form__caption--platform">С каким приложением путешествовали?</legend>
               <ul class="contest-form__list">
-                <li class="contest-form__item">
+                <li class="contest-form__item contest-form__item--radio">
                   <input class="contest-form__radio-input visually-hidden" id="apple" type="radio" name="platform" value="ios" checked>
-                  <label class="contest-form__option-label" for="apple">Pink для iOS</label>
+                  <label class="contest-form__option-label contest-form__option-label--radio" for="apple">Pink для iOS</label>
                 </li>
-                <li class="contest-form__item">
+                <li class="contest-form__item contest-form__item--radio">
                   <input class="contest-form__radio-input visually-hidden" id="android" type="radio" name="platform" value="android">
-                  <label class="contest-form__option-label" for="android">Pink на Android</label>
+                  <label class="contest-form__option-label contest-form__option-label--radio" for="android">Pink на Android</label>
                 </li>
-                <li class="contest-form__item">
+                <li class="contest-form__item contest-form__item--radio">
                   <input class="contest-form__radio-input visually-hidden" id="windows" type="radio" name="platform" value="windows">
-                  <label class="contest-form__option-label" for="windows">Windows Phone</label>
+                  <label class="contest-form__option-label contest-form__option-label--radio" for="windows">Windows Phone</label>
                 </li>
               </ul>
             </fieldset>
           </div>
 
           <div class="contest-form__fieldset-wrap contest-form__fieldset-wrap--impressions">
-            <fieldset class="contest-form__fieldset">
+            <fieldset class="contest-form__fieldset contest-form__fieldset--impressions">
               <label class="contest-form__caption contest-form__caption--impressions" for="your-impressions">Опишите свои эмоции</label>
-              <textarea class="contest-form__input contest-form__input--textarea  input-field" name="impressions" id="your-impressions" rows="6">Можно прям в красках, не стесняясь в выражениях</textarea>
+              <textarea class="contest-form__input contest-form__input--textarea  input-field" name="impressions" id="your-impressions" rows="3">Можно прям в красках, не стесняясь в выражениях</textarea>
             </fieldset>
           </div>
 
           <div class="contest-form__submit">
             <button class="contest-form__button button" type="submit">Отправить форму</button>
-            <p class="contest-form__clarify"><span class="contest-form__clarify contest-form__clarify--colored">*</span> — обязательные поля</p>
+            <p class="contest-form__clarify"><span class="contest-form__clarify contest-form__clarify--colored">*</span> — обязательные<span class="contest-form__clarify contest-form__clarify--desktop"> для заполнения</span> поля</p>
           </div>
 
         </form>
@@ -256,7 +256,7 @@
         </li>
         <li class="social-links__item">
           <a class="social-links__link" href="https://www.youtube.com/" target="_blank">
-            <svg class="social-links__icon" width="15" height="13">
+            <svg class="social-links__icon" width="20" height="13">
               <use xlink:href="./img/icons/set.svg#youtube"></use>
             </svg>
             <span class="visually-hidden">Ютуб</span>
@@ -265,8 +265,8 @@
       </ul>
 
       <p class="page-footer__copyright academy-copyright">
-        <span class="academy-copyright__text">Разработано</span>
         <a class="academy-copyright__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
+          <span class="academy-copyright__text">Разработано</span>
           <svg class="academy-copyright__logo" width="27" height="34">
             <use xlink:href="./img/icons/set.svg#htmlacademy"></use>
           </svg>
@@ -292,12 +292,12 @@
       <h2 class="popup__title">Что-то пошло не&nbsp;так!</h2>
       <p>Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
     </div>
-    <div class="popup__control">
+    <div class="popup__control popup__control--failure">
       <button class="popup__button popup__button--failure button" type="button">Ок</button>
     </div>
   </section>
 
-  <script src="js/scripts.js"></script>
+  <script src="js/scripts.min.js"></script>
 
 </body>
 </html>

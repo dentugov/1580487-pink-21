@@ -1,33 +1,10 @@
 .page-header {
+  position: relative;
   color: $white;
-  background-color: $page-header-bg;
-  background-position: top center;
-  background-repeat: no-repeat;
-
-  @include media-mobile-only {
-    background-image: url("../img/content/back-mobile.jpg");
-
-    @include media-2x {
-      background-image: url("../img/content/back-mobile@2x.jpg");
-      background-size: cover;
-    }
-  }
+  margin-bottom: -66px;
+  z-index: 2;
 
   @include media-tablet {
-    background-image: url("../img/content/back-tablet.jpg");
-
-    @include media-2x {
-      background-image: url("../img/content/back-tablet@2x.jpg");
-      background-size: cover;
-    }
-  }
-
-  @include media-desktop {
-    background-image: url("../img/content/back-desktop.jpg");
-
-    @include media-2x {
-      background-image: url("../img/content/back-desktop@2x.jpg");
-      background-size: cover;
-    }
+    margin-bottom: -110px;
   }
 }

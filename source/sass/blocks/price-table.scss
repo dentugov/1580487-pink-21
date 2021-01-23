@@ -2,10 +2,20 @@
 
 .price-table {
   position: relative;
-  padding: 100px 0 50px;
+  padding: 102px 0 49px;
   background-color: $page-section-bg-color;
   clip-path: polygon(0 20px, 100% 0, 100% 100%, 0 100%);
   overflow: hidden;
+
+  @include media-tablet {
+    padding: 98px 0 67px;
+    clip-path: polygon(0 40px, 100% 0, 100% 100%, 0 100%);
+  }
+
+  @include media-desktop {
+    padding: 159px 0 96px;
+    clip-path: polygon(0 100px, 100% 0, 100% 100%, 0 100%);
+  }
 }
 
 .price-table__container {
@@ -17,7 +27,7 @@
     left: 50%;
     width: calc(100% * 3);
     transform: translateX(-50%);
-    margin-bottom: 43px;
+    margin-bottom: 41px;
   }
 }
 
@@ -40,8 +50,8 @@
   &--hit::before {
     content: "Хит";
     position: absolute;
-    top: 12px;
-    left: -30px;
+    top: 18px;
+    left: -26px;
     font-weight: $font-weight-thin;
     text-transform: uppercase;
     background-color: $basic-accent-color;
@@ -55,12 +65,24 @@
 
   @include media-mobile-only {
     width: calc(100% / 3);
-    padding: 20px 0 30px;
+    padding: 13px 0 32px;
+  }
+
+  @include media-tablet {
+    &--hit::before {
+      top: 15px;
+      left: -32px;
+      line-height: $line-height-s;
+    }
+  }
+
+  @include media-desktop {
+    padding: 14px 0 20px;
   }
 }
 
 .price-table__tariff-name {
-  @include font-params($font-size-m, $font-weight-bold);
+  @include font-params($font-size-m, $font-weight-bold, $line-height-m);
   margin: 0;
 
   @include media-desktop {
@@ -81,12 +103,14 @@
 
 .price-table__tariff-includes {
   font-weight: $font-weight-normal;
+  text-align: left;
   border: 2px solid $basic-border-color;
   background-color: $price-table-body-bg;
-  padding: 10px 16px;
+  padding: 7px 16px;
 
   @include media-desktop {
     font-size: $font-size-l;
+    padding-left: 21px;
   }
 }
 
@@ -97,7 +121,7 @@
 .price-table__tariff-item {
   border: 2px solid $basic-border-color;
   background-color: $price-table-body-bg;
-  padding: 15px 17px;
+  padding: 14px 17px 16px;
 
   @include media-mobile-only {
     position: relative;
@@ -106,14 +130,14 @@
       content: attr(data-tariff);
       position: absolute;
       text-transform: uppercase;
-      top: 50%;
-      left: 20px;
+      top: 46%;
+      left: 21px;
       transform: translateY(-50%);
     }
   }
 
   @include media-tablet {
-    padding-top: 9px;
+    padding-top: 7px;
     padding-bottom: 9px;
   }
 

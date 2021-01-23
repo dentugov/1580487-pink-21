@@ -15,11 +15,23 @@
   @include media-mobile-only {
     margin-bottom: 38px;
   }
+
+  @include media-tablet {
+    align-self: flex-start;
+  }
 }
 
 .page-footer__socials {
   @include media-mobile-only {
     margin-bottom: 38px;
+  }
+
+  @include media-tablet {
+    margin-left: -14px;
+  }
+
+  @include media-desktop {
+    margin-left: 5px;
   }
 }
 

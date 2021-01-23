@@ -1,7 +1,15 @@
 // Panorama
 
 .panorama {
-  padding-bottom: 20px;
+  padding: 12px 0 20px;
+
+  @include media-tablet {
+    padding: 5px 0 50px;
+  }
+
+  @include media-desktop {
+    padding-top: 17px;
+  }
 }
 
 .panorama__inner {

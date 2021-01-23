@@ -7,11 +7,15 @@
   flex-wrap: wrap;
 }
 
-.social-links__item:not(:last-child) {
-  margin-right: 8px;
+.social-links__item {
+  &:not(:last-child) {
+    margin-right: 8px;
+  }
 
-  @include media-tablet {
-    margin-right: 5px;
+  @include media-desktop {
+    &:not(:last-child) {
+      margin-right: 5px;
+    }
   }
 }
 

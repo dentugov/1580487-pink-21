@@ -1,0 +1,27 @@
+// Typography for PixelPerfect...
+
+.typography-pp {
+  display: none;
+
+  &--mobile-only {
+    @include media-mobile-only {
+      display: block;
+    }
+  }
+
+  &--tablet-only {
+    @include media-tablet {
+      display: block;
+    }
+
+    @include media-desktop {
+      display: none;
+    }
+  }
+
+  &--desktop-only {
+    @include media-desktop {
+      display: block;
+    }
+  }
+}
