@@ -1,22 +1,10 @@
 // Copyright
 
-.academy-copyright {
+.academy-copyright__link {
   display: flex;
   align-items: center;
-}
-
-.academy-copyright__text {
-  line-height: $line-height-m;
-  margin-right: 16px;
-
-  @include media-desktop {
-    font-size: $font-size-l;
-    margin-right: 13px;
-  }
-}
-
-.academy-copyright__link {
   color: $basic-accent-color;
+  text-decoration: none;
   transition: color 0.25s;
 
   &[href]:hover {
@@ -24,14 +12,25 @@
   }
 
   &[href]:active {
-    opacity: 0.3;
+    color: rgba($basic-text-color, 0.3);
   }
+}
 
-  @include media-tablet {
-    margin-top: 1px;
+.academy-copyright__text {
+  line-height: $line-height-m;
+  margin-right: 16px;
+  color: $basic-text-color;
+
+  @include media-desktop {
+    font-size: $font-size-l;
+    margin-right: 13px;
   }
 }
 
 .academy-copyright__logo {
   display: block;
+
+  @include media-tablet {
+    margin-top: 1px;
+  }
 }

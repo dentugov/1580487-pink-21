@@ -29,25 +29,33 @@
 }
 
 .popup__content {
-  padding: 40px 20px;
+  padding: 38px 20px 34px;
 
   @include media-tablet {
-    padding: 40px 75px;
+    padding: 38px 75px 30px;
   }
 
   @include media-desktop {
-    padding: 40px 190px;
+    padding: 38px 190px;
+    min-height: 210px;
   }
 }
 
 .popup__title {
   color: $black;
   font-size: $font-size-l;
+  margin: 0;
+  margin-bottom: 25px;
 
   @include media-tablet {
     font-size: $font-size-3xl;
     line-height: 40px;
+    margin-bottom: 22px;
   }
+}
+
+.popup__content p {
+  margin: 0;
 }
 
 .popup__control {
@@ -61,10 +69,26 @@
   @include media-desktop {
     padding: 50px 160px;
   }
+
+  &--failure {
+    @include media-except-desktop {
+      background-color: $white;
+      padding-top: 7px;
+    }
+
+    @include media-tablet {
+      padding-top: 4px;
+    }
+
+    @include media-desktop {
+      padding-top: 50px;
+    }
+  }
 }
 
 .popup__button {
   width: 100%;
+  font-size: $font-size-l;
 
   @include media-desktop {
     &--failure {

@@ -177,6 +177,7 @@
   text-transform: uppercase;
   color: $contest-caption-color;
   padding: 0 25px;
+  margin: 0 auto;
   margin-bottom: 38px;
 
   @include media-mobile-only {

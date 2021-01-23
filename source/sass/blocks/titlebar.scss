@@ -2,17 +2,41 @@
 
 .titlebar {
   color: $white;
-  padding: 28px 0 44px;
-  min-height: 171px;
+  padding: 94px 0 44px;
+  min-height: 237px;
+  background-color: $titlebar-bg;
+  background-position: top center;
+  background-repeat: no-repeat;
+
+  @include media-mobile-only {
+    background-image: url("../img/content/back-mobile.jpg");
+    background-size: 100%;
+
+    @include media-2x {
+      background-image: url("../img/content/back-mobile@2x.jpg");
+    }
+  }
 
   @include media-tablet {
-    padding: 67px 0 59px;
-    min-height: 330px;
+    padding: 177px 0 59px;
+    min-height: 440px;
+    background-image: url("../img/content/back-tablet.jpg");
+
+    @include media-2x {
+      background-image: url("../img/content/back-tablet@2x.jpg");
+      background-size: cover;
+    }
   }
 
   @include media-desktop {
-    padding: 59px 0 89px;
+    padding: 169px 0 89px;
     min-height: auto;
+    background-image: url("../img/content/back-desktop.jpg");
+
+    @include media-2x {
+      background-image: url("../img/content/back-desktop@2x.jpg");
+      background-size: cover;
+    }
   }
 }
 
